@@ -1,0 +1,1448 @@
+Picked up JAVA_TOOL_OPTIONS: -Djava.home=/workspace/scratch/jdk21
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :clean
+
+> Task :compileJava
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+3 warnings
+
+> Task :processResources NO-SOURCE
+> Task :classes
+
+> Task :compileTestJava
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+3 warnings
+
+> Task :processTestResources
+> Task :testClasses
+
+> Task :test
+Picked up JAVA_TOOL_OPTIONS: -Djava.home=/workspace/scratch/jdk21
+
+RunCukesTest > | 1 | ADD_RECIPE |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 1 | ADD_RECIPE |.When I select service 1 PASSED
+
+RunCukesTest > | 1 | ADD_RECIPE |.Then the machine mode is ADD_RECIPE PASSED
+
+RunCukesTest > | 1 | ADD_RECIPE |.And the operation status is OK PASSED
+
+RunCukesTest > | 1 | ADD_RECIPE |.classMethod PASSED
+
+RunCukesTest > | 2 | DELETE_RECIPE |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 2 | DELETE_RECIPE |.When I select service 2 PASSED
+
+RunCukesTest > | 2 | DELETE_RECIPE |.Then the machine mode is DELETE_RECIPE PASSED
+
+RunCukesTest > | 2 | DELETE_RECIPE |.And the operation status is OK PASSED
+
+RunCukesTest > | 2 | DELETE_RECIPE |.classMethod PASSED
+
+RunCukesTest > | 3 | EDIT_RECIPE |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 3 | EDIT_RECIPE |.When I select service 3 PASSED
+
+RunCukesTest > | 3 | EDIT_RECIPE |.Then the machine mode is EDIT_RECIPE PASSED
+
+RunCukesTest > | 3 | EDIT_RECIPE |.And the operation status is OK PASSED
+
+RunCukesTest > | 3 | EDIT_RECIPE |.classMethod PASSED
+
+RunCukesTest > | 4 | ADD_INVENTORY |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 4 | ADD_INVENTORY |.When I select service 4 PASSED
+
+RunCukesTest > | 4 | ADD_INVENTORY |.Then the machine mode is ADD_INVENTORY PASSED
+
+RunCukesTest > | 4 | ADD_INVENTORY |.And the operation status is OK PASSED
+
+RunCukesTest > | 4 | ADD_INVENTORY |.classMethod PASSED
+
+RunCukesTest > | 5 | CHECK_INVENTORY |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 5 | CHECK_INVENTORY |.When I select service 5 PASSED
+
+RunCukesTest > | 5 | CHECK_INVENTORY |.Then the machine mode is CHECK_INVENTORY PASSED
+
+RunCukesTest > | 5 | CHECK_INVENTORY |.And the operation status is OK PASSED
+
+RunCukesTest > | 5 | CHECK_INVENTORY |.classMethod PASSED
+
+RunCukesTest > | 6 | PURCHASE_BEVERAGE |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 6 | PURCHASE_BEVERAGE |.When I select service 6 PASSED
+
+RunCukesTest > | 6 | PURCHASE_BEVERAGE |.Then the machine mode is PURCHASE_BEVERAGE PASSED
+
+RunCukesTest > | 6 | PURCHASE_BEVERAGE |.And the operation status is OK PASSED
+
+RunCukesTest > | 6 | PURCHASE_BEVERAGE |.classMethod PASSED
+
+RunCukesTest > | 0 | WAITING |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 0 | WAITING |.When I select service 0 PASSED
+
+RunCukesTest > | 0 | WAITING |.Then the machine mode is WAITING PASSED
+
+RunCukesTest > | 0 | WAITING |.And the operation status is OK PASSED
+
+RunCukesTest > | 0 | WAITING |.classMethod PASSED
+
+RunCukesTest > | -1 | WAITING |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | -1 | WAITING |.When I select service -1 PASSED
+
+RunCukesTest > | -1 | WAITING |.Then the machine mode is WAITING PASSED
+
+RunCukesTest > | -1 | WAITING |.And the operation status is OK PASSED
+
+RunCukesTest > | -1 | WAITING |.classMethod PASSED
+
+RunCukesTest > | 7 | WAITING |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 7 | WAITING |.When I select service 7 PASSED
+
+RunCukesTest > | 7 | WAITING |.Then the machine mode is WAITING PASSED
+
+RunCukesTest > | 7 | WAITING |.And the operation status is OK PASSED
+
+RunCukesTest > | 7 | WAITING |.classMethod PASSED
+
+RunCukesTest > Scenario: A new machine waits with no recipes or money.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: A new machine waits with no recipes or money.Then the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: A new machine waits with no recipes or money.And the operation status is OK PASSED
+
+RunCukesTest > Scenario: A new machine waits with no recipes or money.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > Scenario: A new machine waits with no recipes or money.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: A new machine waits with no recipes or money.And the return tray contains 0 money units PASSED
+
+RunCukesTest > Scenario: A new machine waits with no recipes or money.classMethod PASSED
+
+RunCukesTest > Scenario: Add a recipe and preserve every field.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Add a recipe and preserve every field.When I add recipe "Coffee" priced 50 using 3 coffee 1 milk 2 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: Add a recipe and preserve every field.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Add a recipe and preserve every field.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Add a recipe and preserve every field.And the recipe book contains 1 recipes PASSED
+
+RunCukesTest > Scenario: Add a recipe and preserve every field.And recipe at index 0 is "Coffee" priced 50 using 3 coffee 1 milk 2 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: Add a recipe and preserve every field.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Add a recipe and preserve every field.classMethod PASSED
+
+RunCukesTest > Scenario: The fourth distinct recipe is rejected.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: The fourth distinct recipe is rejected.Given the standard three recipes are available PASSED
+
+RunCukesTest > Scenario: The fourth distinct recipe is rejected.When I add recipe "Fourth" priced 40 using 1 coffee 1 milk 1 sugar 1 chocolate PASSED
+
+RunCukesTest > Scenario: The fourth distinct recipe is rejected.Then the operation status is RECIPE_NOT_ADDED PASSED
+
+RunCukesTest > Scenario: The fourth distinct recipe is rejected.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: The fourth distinct recipe is rejected.And the recipe book contains 3 recipes PASSED
+
+RunCukesTest > Scenario: The fourth distinct recipe is rejected.And recipe at index 0 is "Coffee" priced 50 using 3 coffee 1 milk 1 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: The fourth distinct recipe is rejected.classMethod PASSED
+
+RunCukesTest > Scenario: A duplicate recipe name does not replace the original.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: A duplicate recipe name does not replace the original.When I add recipe "Coffee" priced 50 using 3 coffee 1 milk 1 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: A duplicate recipe name does not replace the original.And I add recipe "Coffee" priced 99 using 9 coffee 9 milk 9 sugar 9 chocolate PASSED
+
+RunCukesTest > Scenario: A duplicate recipe name does not replace the original.Then the operation status is RECIPE_NOT_ADDED PASSED
+
+RunCukesTest > Scenario: A duplicate recipe name does not replace the original.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: A duplicate recipe name does not replace the original.And the recipe book contains 1 recipes PASSED
+
+RunCukesTest > Scenario: A duplicate recipe name does not replace the original.And recipe at index 0 is "Coffee" priced 50 using 3 coffee 1 milk 1 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: A duplicate recipe name does not replace the original.classMethod PASSED
+
+RunCukesTest > Scenario: Delete an existing recipe and preserve other recipes.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Delete an existing recipe and preserve other recipes.Given the standard three recipes are available PASSED
+
+RunCukesTest > Scenario: Delete an existing recipe and preserve other recipes.When I delete recipe at index 1 PASSED
+
+RunCukesTest > Scenario: Delete an existing recipe and preserve other recipes.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Delete an existing recipe and preserve other recipes.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Delete an existing recipe and preserve other recipes.And recipe at index 1 is empty PASSED
+
+RunCukesTest > Scenario: Delete an existing recipe and preserve other recipes.And the recipe book contains 2 recipes PASSED
+
+RunCukesTest > Scenario: Delete an existing recipe and preserve other recipes.And recipe at index 0 is "Coffee" priced 50 using 3 coffee 1 milk 1 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: Delete an existing recipe and preserve other recipes.And recipe at index 2 is "Mocha" priced 90 using 2 coffee 2 milk 1 sugar 3 chocolate PASSED
+
+RunCukesTest > Scenario: Delete an existing recipe and preserve other recipes.classMethod PASSED
+
+RunCukesTest > Scenario: Deleting a recipe frees capacity for a new recipe.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Deleting a recipe frees capacity for a new recipe.Given the standard three recipes are available PASSED
+
+RunCukesTest > Scenario: Deleting a recipe frees capacity for a new recipe.When I delete recipe at index 1 PASSED
+
+RunCukesTest > Scenario: Deleting a recipe frees capacity for a new recipe.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Deleting a recipe frees capacity for a new recipe.When I add recipe "Replacement" priced 40 using 1 coffee 2 milk 3 sugar 4 chocolate PASSED
+
+RunCukesTest > Scenario: Deleting a recipe frees capacity for a new recipe.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Deleting a recipe frees capacity for a new recipe.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Deleting a recipe frees capacity for a new recipe.And the recipe book contains 3 recipes PASSED
+
+RunCukesTest > Scenario: Deleting a recipe frees capacity for a new recipe.classMethod PASSED
+
+RunCukesTest > Scenario: Deleting an empty slot reports an error.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Deleting an empty slot reports an error.When I delete recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Deleting an empty slot reports an error.Then the operation status is OUT_OF_RANGE PASSED
+
+RunCukesTest > Scenario: Deleting an empty slot reports an error.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Deleting an empty slot reports an error.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > Scenario: Deleting an empty slot reports an error.classMethod PASSED
+
+RunCukesTest > | -1 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | -1 |.Given the standard three recipes are available PASSED
+
+RunCukesTest > | -1 |.When I delete recipe at index -1 PASSED
+
+RunCukesTest > | -1 |.Then the operation status is OUT_OF_RANGE PASSED
+
+RunCukesTest > | -1 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | -1 |.And the recipe book contains 3 recipes PASSED
+
+RunCukesTest > | -1 |.classMethod PASSED
+
+RunCukesTest > | 3 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 3 |.Given the standard three recipes are available PASSED
+
+RunCukesTest > | 3 |.When I delete recipe at index 3 PASSED
+
+RunCukesTest > | 3 |.Then the operation status is OUT_OF_RANGE PASSED
+
+RunCukesTest > | 3 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | 3 |.And the recipe book contains 3 recipes PASSED
+
+RunCukesTest > | 3 |.classMethod PASSED
+
+RunCukesTest > | 99 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 99 |.Given the standard three recipes are available PASSED
+
+RunCukesTest > | 99 |.When I delete recipe at index 99 PASSED
+
+RunCukesTest > | 99 |.Then the operation status is OUT_OF_RANGE PASSED
+
+RunCukesTest > | 99 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | 99 |.And the recipe book contains 3 recipes PASSED
+
+RunCukesTest > | 99 |.classMethod PASSED
+
+RunCukesTest > Scenario: Edit updates values but keeps the original name.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Edit updates values but keeps the original name.Given the standard three recipes are available PASSED
+
+RunCukesTest > Scenario: Edit updates values but keeps the original name.When I select recipe at index 1 for editing PASSED
+
+RunCukesTest > Scenario: Edit updates values but keeps the original name.Then the machine mode is EDIT_RECIPE PASSED
+
+RunCukesTest > Scenario: Edit updates values but keeps the original name.And the operation status is OK PASSED
+
+RunCukesTest > Scenario: Edit updates values but keeps the original name.When I submit edited recipe named "ChangedName" priced 85 using 1 coffee 2 milk 3 sugar 4 chocolate PASSED
+
+RunCukesTest > Scenario: Edit updates values but keeps the original name.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Edit updates values but keeps the original name.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Edit updates values but keeps the original name.And the recipe book contains 3 recipes PASSED
+
+RunCukesTest > Scenario: Edit updates values but keeps the original name.And recipe at index 1 is "Latte" priced 85 using 1 coffee 2 milk 3 sugar 4 chocolate PASSED
+
+RunCukesTest > Scenario: Edit updates values but keeps the original name.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Edit updates values but keeps the original name.classMethod PASSED
+
+RunCukesTest > Scenario: Edited price and ingredients govern subsequent purchase.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Edited price and ingredients govern subsequent purchase.Given the standard three recipes are available PASSED
+
+RunCukesTest > Scenario: Edited price and ingredients govern subsequent purchase.When I select recipe at index 1 for editing PASSED
+
+RunCukesTest > Scenario: Edited price and ingredients govern subsequent purchase.And I submit edited recipe named "Ignored" priced 85 using 1 coffee 2 milk 3 sugar 4 chocolate PASSED
+
+RunCukesTest > Scenario: Edited price and ingredients govern subsequent purchase.And I insert 100 money units PASSED
+
+RunCukesTest > Scenario: Edited price and ingredients govern subsequent purchase.And I purchase recipe at index 1 PASSED
+
+RunCukesTest > Scenario: Edited price and ingredients govern subsequent purchase.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Edited price and ingredients govern subsequent purchase.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Edited price and ingredients govern subsequent purchase.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Edited price and ingredients govern subsequent purchase.And the return tray contains 15 money units PASSED
+
+RunCukesTest > Scenario: Edited price and ingredients govern subsequent purchase.And the inventory report shows 14 coffee 13 milk 12 sugar 11 chocolate PASSED
+
+RunCukesTest > Scenario: Edited price and ingredients govern subsequent purchase.classMethod PASSED
+
+RunCukesTest > Scenario: An empty recipe cannot be selected for editing.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: An empty recipe cannot be selected for editing.When I select recipe at index 0 for editing PASSED
+
+RunCukesTest > Scenario: An empty recipe cannot be selected for editing.Then the operation status is OUT_OF_RANGE PASSED
+
+RunCukesTest > Scenario: An empty recipe cannot be selected for editing.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: An empty recipe cannot be selected for editing.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > Scenario: An empty recipe cannot be selected for editing.classMethod PASSED
+
+RunCukesTest > | -1 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | -1 |.Given the standard three recipes are available PASSED
+
+RunCukesTest > | -1 |.When I select recipe at index -1 for editing PASSED
+
+RunCukesTest > | -1 |.Then the operation status is OUT_OF_RANGE PASSED
+
+RunCukesTest > | -1 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | -1 |.And the recipe book contains 3 recipes PASSED
+
+RunCukesTest > | -1 |.classMethod PASSED
+
+RunCukesTest > | 3 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 3 |.Given the standard three recipes are available PASSED
+
+RunCukesTest > | 3 |.When I select recipe at index 3 for editing PASSED
+
+RunCukesTest > | 3 |.Then the operation status is OUT_OF_RANGE PASSED
+
+RunCukesTest > | 3 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | 3 |.And the recipe book contains 3 recipes PASSED
+
+RunCukesTest > | 3 |.classMethod PASSED
+
+RunCukesTest > | 99 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 99 |.Given the standard three recipes are available PASSED
+
+RunCukesTest > | 99 |.When I select recipe at index 99 for editing PASSED
+
+RunCukesTest > | 99 |.Then the operation status is OUT_OF_RANGE PASSED
+
+RunCukesTest > | 99 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | 99 |.And the recipe book contains 3 recipes PASSED
+
+RunCukesTest > | 99 |.classMethod PASSED
+
+RunCukesTest > Scenario: Add different amounts to each ingredient.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Add different amounts to each ingredient.When I add inventory 2 coffee 3 milk 4 sugar 5 chocolate PASSED
+
+RunCukesTest > Scenario: Add different amounts to each ingredient.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Add different amounts to each ingredient.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Add different amounts to each ingredient.And the inventory report shows 17 coffee 18 milk 19 sugar 20 chocolate PASSED
+
+RunCukesTest > Scenario: Add different amounts to each ingredient.classMethod PASSED
+
+RunCukesTest > Scenario: Inventory additions accumulate.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Inventory additions accumulate.When I add inventory 2 coffee 3 milk 4 sugar 5 chocolate PASSED
+
+RunCukesTest > Scenario: Inventory additions accumulate.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Inventory additions accumulate.When I add inventory 1 coffee 2 milk 3 sugar 4 chocolate PASSED
+
+RunCukesTest > Scenario: Inventory additions accumulate.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Inventory additions accumulate.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Inventory additions accumulate.And the inventory report shows 18 coffee 20 milk 22 sugar 24 chocolate PASSED
+
+RunCukesTest > Scenario: Inventory additions accumulate.classMethod PASSED
+
+RunCukesTest > Scenario: Adding zero changes no stock.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Adding zero changes no stock.When I add inventory 0 coffee 0 milk 0 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: Adding zero changes no stock.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Adding zero changes no stock.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Adding zero changes no stock.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Adding zero changes no stock.classMethod PASSED
+
+RunCukesTest > | -1 | 0 | 0 | 0 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | -1 | 0 | 0 | 0 |.When I add inventory -1 coffee 0 milk 0 sugar 0 chocolate PASSED
+
+RunCukesTest > | -1 | 0 | 0 | 0 |.Then the operation status is OUT_OF_RANGE PASSED
+
+RunCukesTest > | -1 | 0 | 0 | 0 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | -1 | 0 | 0 | 0 |.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > | -1 | 0 | 0 | 0 |.classMethod PASSED
+
+RunCukesTest > | 0 | -1 | 0 | 0 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 0 | -1 | 0 | 0 |.When I add inventory 0 coffee -1 milk 0 sugar 0 chocolate PASSED
+
+RunCukesTest > | 0 | -1 | 0 | 0 |.Then the operation status is OUT_OF_RANGE PASSED
+
+RunCukesTest > | 0 | -1 | 0 | 0 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | 0 | -1 | 0 | 0 |.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > | 0 | -1 | 0 | 0 |.classMethod PASSED
+
+RunCukesTest > | 0 | 0 | -1 | 0 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 0 | 0 | -1 | 0 |.When I add inventory 0 coffee 0 milk -1 sugar 0 chocolate PASSED
+
+RunCukesTest > | 0 | 0 | -1 | 0 |.Then the operation status is OUT_OF_RANGE PASSED
+
+RunCukesTest > | 0 | 0 | -1 | 0 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | 0 | 0 | -1 | 0 |.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > | 0 | 0 | -1 | 0 |.classMethod PASSED
+
+RunCukesTest > | 0 | 0 | 0 | -1 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 0 | 0 | 0 | -1 |.When I add inventory 0 coffee 0 milk 0 sugar -1 chocolate PASSED
+
+RunCukesTest > | 0 | 0 | 0 | -1 |.Then the operation status is OUT_OF_RANGE PASSED
+
+RunCukesTest > | 0 | 0 | 0 | -1 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | 0 | 0 | 0 | -1 |.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > | 0 | 0 | 0 | -1 |.classMethod PASSED
+
+RunCukesTest > Scenario: Check inventory twice without changing it.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Check inventory twice without changing it.Then the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Check inventory twice without changing it.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Check inventory twice without changing it.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Check inventory twice without changing it.classMethod PASSED
+
+RunCukesTest > Scenario: Exact payment.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Exact payment.Given the standard three recipes are available PASSED
+
+RunCukesTest > Scenario: Exact payment.When I insert 50 money units PASSED
+
+RunCukesTest > Scenario: Exact payment.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Exact payment.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Exact payment.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Exact payment.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Exact payment.And the return tray contains 0 money units PASSED
+
+RunCukesTest > Scenario: Exact payment.And the inventory report shows 12 coffee 14 milk 14 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Exact payment.classMethod PASSED
+
+RunCukesTest > Scenario: Overpayment.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Overpayment.Given the standard three recipes are available PASSED
+
+RunCukesTest > Scenario: Overpayment.When I insert 75 money units PASSED
+
+RunCukesTest > Scenario: Overpayment.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Overpayment.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Overpayment.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Overpayment.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Overpayment.And the return tray contains 25 money units PASSED
+
+RunCukesTest > Scenario: Overpayment.And the inventory report shows 12 coffee 14 milk 14 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Overpayment.classMethod PASSED
+
+RunCukesTest > Scenario: Middle recipe purchase.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Middle recipe purchase.Given the standard three recipes are available PASSED
+
+RunCukesTest > Scenario: Middle recipe purchase.When I insert 100 money units PASSED
+
+RunCukesTest > Scenario: Middle recipe purchase.And I purchase recipe at index 1 PASSED
+
+RunCukesTest > Scenario: Middle recipe purchase.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Middle recipe purchase.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Middle recipe purchase.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Middle recipe purchase.And the return tray contains 30 money units PASSED
+
+RunCukesTest > Scenario: Middle recipe purchase.And the inventory report shows 13 coffee 12 milk 14 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Middle recipe purchase.classMethod PASSED
+
+RunCukesTest > Scenario: Last recipe purchase.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Last recipe purchase.Given the standard three recipes are available PASSED
+
+RunCukesTest > Scenario: Last recipe purchase.When I insert 100 money units PASSED
+
+RunCukesTest > Scenario: Last recipe purchase.And I purchase recipe at index 2 PASSED
+
+RunCukesTest > Scenario: Last recipe purchase.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Last recipe purchase.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Last recipe purchase.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Last recipe purchase.And the return tray contains 10 money units PASSED
+
+RunCukesTest > Scenario: Last recipe purchase.And the inventory report shows 13 coffee 13 milk 14 sugar 12 chocolate PASSED
+
+RunCukesTest > Scenario: Last recipe purchase.classMethod PASSED
+
+RunCukesTest > Scenario: Several inserted payments accumulate.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Several inserted payments accumulate.Given the standard three recipes are available PASSED
+
+RunCukesTest > Scenario: Several inserted payments accumulate.When I insert 20 money units PASSED
+
+RunCukesTest > Scenario: Several inserted payments accumulate.And I insert 55 money units PASSED
+
+RunCukesTest > Scenario: Several inserted payments accumulate.Then the inserted money is 75 PASSED
+
+RunCukesTest > Scenario: Several inserted payments accumulate.When I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Several inserted payments accumulate.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Several inserted payments accumulate.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Several inserted payments accumulate.And the return tray contains 25 money units PASSED
+
+RunCukesTest > Scenario: Several inserted payments accumulate.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Several inserted payments accumulate.classMethod PASSED
+
+RunCukesTest > Scenario: Underpayment is returned without consuming stock.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Underpayment is returned without consuming stock.Given the standard three recipes are available PASSED
+
+RunCukesTest > Scenario: Underpayment is returned without consuming stock.When I insert 49 money units PASSED
+
+RunCukesTest > Scenario: Underpayment is returned without consuming stock.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Underpayment is returned without consuming stock.Then the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Underpayment is returned without consuming stock.And all 49 money units remain available to the customer PASSED
+
+RunCukesTest > Scenario: Underpayment is returned without consuming stock.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Underpayment is returned without consuming stock.classMethod PASSED
+
+RunCukesTest > Scenario: Insufficient coffee returns the full payment.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Insufficient coffee returns the full payment.When I add recipe "Large" priced 50 using 16 coffee 1 milk 1 sugar 1 chocolate PASSED
+
+RunCukesTest > Scenario: Insufficient coffee returns the full payment.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Insufficient coffee returns the full payment.When I insert 75 money units PASSED
+
+RunCukesTest > Scenario: Insufficient coffee returns the full payment.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Insufficient coffee returns the full payment.Then the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Insufficient coffee returns the full payment.And all 75 money units remain available to the customer PASSED
+
+RunCukesTest > Scenario: Insufficient coffee returns the full payment.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Insufficient coffee returns the full payment.classMethod PASSED
+
+RunCukesTest > Scenario: Insufficient milk returns the full payment.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Insufficient milk returns the full payment.When I add recipe "Large" priced 50 using 1 coffee 16 milk 1 sugar 1 chocolate PASSED
+
+RunCukesTest > Scenario: Insufficient milk returns the full payment.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Insufficient milk returns the full payment.When I insert 75 money units PASSED
+
+RunCukesTest > Scenario: Insufficient milk returns the full payment.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Insufficient milk returns the full payment.Then the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Insufficient milk returns the full payment.And all 75 money units remain available to the customer PASSED
+
+RunCukesTest > Scenario: Insufficient milk returns the full payment.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Insufficient milk returns the full payment.classMethod PASSED
+
+RunCukesTest > Scenario: Insufficient sugar returns the full payment.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Insufficient sugar returns the full payment.When I add recipe "Large" priced 50 using 1 coffee 1 milk 16 sugar 1 chocolate PASSED
+
+RunCukesTest > Scenario: Insufficient sugar returns the full payment.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Insufficient sugar returns the full payment.When I insert 75 money units PASSED
+
+RunCukesTest > Scenario: Insufficient sugar returns the full payment.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Insufficient sugar returns the full payment.Then the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Insufficient sugar returns the full payment.And all 75 money units remain available to the customer PASSED
+
+RunCukesTest > Scenario: Insufficient sugar returns the full payment.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Insufficient sugar returns the full payment.classMethod PASSED
+
+RunCukesTest > Scenario: Insufficient chocolate returns the full payment.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Insufficient chocolate returns the full payment.When I add recipe "Large" priced 50 using 1 coffee 1 milk 1 sugar 16 chocolate PASSED
+
+RunCukesTest > Scenario: Insufficient chocolate returns the full payment.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Insufficient chocolate returns the full payment.When I insert 75 money units PASSED
+
+RunCukesTest > Scenario: Insufficient chocolate returns the full payment.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Insufficient chocolate returns the full payment.Then the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Insufficient chocolate returns the full payment.And all 75 money units remain available to the customer PASSED
+
+RunCukesTest > Scenario: Insufficient chocolate returns the full payment.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Insufficient chocolate returns the full payment.classMethod PASSED
+
+RunCukesTest > Scenario: Exactly available ingredients can be consumed.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Exactly available ingredients can be consumed.When I add recipe "All" priced 50 using 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Exactly available ingredients can be consumed.And I insert 50 money units PASSED
+
+RunCukesTest > Scenario: Exactly available ingredients can be consumed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Exactly available ingredients can be consumed.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Exactly available ingredients can be consumed.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Exactly available ingredients can be consumed.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Exactly available ingredients can be consumed.And the return tray contains 0 money units PASSED
+
+RunCukesTest > Scenario: Exactly available ingredients can be consumed.And the inventory report shows 0 coffee 0 milk 0 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: Exactly available ingredients can be consumed.classMethod PASSED
+
+RunCukesTest > Scenario: A recipe using only chocolate leaves other ingredients unchanged.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: A recipe using only chocolate leaves other ingredients unchanged.When I add recipe "Chocolate" priced 65 using 0 coffee 0 milk 0 sugar 4 chocolate PASSED
+
+RunCukesTest > Scenario: A recipe using only chocolate leaves other ingredients unchanged.And I insert 100 money units PASSED
+
+RunCukesTest > Scenario: A recipe using only chocolate leaves other ingredients unchanged.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: A recipe using only chocolate leaves other ingredients unchanged.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: A recipe using only chocolate leaves other ingredients unchanged.And the return tray contains 35 money units PASSED
+
+RunCukesTest > Scenario: A recipe using only chocolate leaves other ingredients unchanged.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: A recipe using only chocolate leaves other ingredients unchanged.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: A recipe using only chocolate leaves other ingredients unchanged.And the inventory report shows 15 coffee 15 milk 15 sugar 11 chocolate PASSED
+
+RunCukesTest > Scenario: A recipe using only chocolate leaves other ingredients unchanged.classMethod PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.Given the standard three recipes are available PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.When I insert 75 money units PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.And I insert 80 money units PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.And I purchase recipe at index 1 PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.And the return tray contains 35 money units PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.When I collect the returned money PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.And the return tray contains 0 money units PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.And the inventory report shows 10 coffee 11 milk 13 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Money returned from several purchases accumulates until collected.classMethod PASSED
+
+RunCukesTest > Scenario: Selecting an empty recipe returns the payment.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Selecting an empty recipe returns the payment.When I insert 75 money units PASSED
+
+RunCukesTest > Scenario: Selecting an empty recipe returns the payment.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Selecting an empty recipe returns the payment.Then the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Selecting an empty recipe returns the payment.And all 75 money units remain available to the customer PASSED
+
+RunCukesTest > Scenario: Selecting an empty recipe returns the payment.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Selecting an empty recipe returns the payment.classMethod PASSED
+
+RunCukesTest > | -1 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | -1 |.Given the standard three recipes are available PASSED
+
+RunCukesTest > | -1 |.When a purchase request selects invalid index -1 with payment 75 PASSED
+
+RunCukesTest > | -1 |.Then the invalid selection is rejected without charging the 75 money units PASSED
+
+RunCukesTest > | -1 |.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > | -1 |.classMethod PASSED
+
+RunCukesTest > | 3 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 3 |.Given the standard three recipes are available PASSED
+
+RunCukesTest > | 3 |.When a purchase request selects invalid index 3 with payment 75 PASSED
+
+RunCukesTest > | 3 |.Then the invalid selection is rejected without charging the 75 money units PASSED
+
+RunCukesTest > | 3 |.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > | 3 |.classMethod PASSED
+
+RunCukesTest > | 99 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 99 |.Given the standard three recipes are available PASSED
+
+RunCukesTest > | 99 |.When a purchase request selects invalid index 99 with payment 75 PASSED
+
+RunCukesTest > | 99 |.Then the invalid selection is rejected without charging the 75 money units PASSED
+
+RunCukesTest > | 99 |.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > | 99 |.classMethod PASSED
+
+RunCukesTest > | 0 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 0 |.When I insert 0 money units PASSED
+
+RunCukesTest > | 0 |.Then the operation status is OUT_OF_RANGE PASSED
+
+RunCukesTest > | 0 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | 0 |.And the inserted money is 0 PASSED
+
+RunCukesTest > | 0 |.And the return tray contains 0 money units PASSED
+
+RunCukesTest > | 0 |.classMethod PASSED
+
+RunCukesTest > | -1 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | -1 |.When I insert -1 money units PASSED
+
+RunCukesTest > | -1 |.Then the operation status is OUT_OF_RANGE PASSED
+
+RunCukesTest > | -1 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | -1 |.And the inserted money is 0 PASSED
+
+RunCukesTest > | -1 |.And the return tray contains 0 money units PASSED
+
+RunCukesTest > | -1 |.classMethod PASSED
+
+RunCukesTest > | 1 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 1 |.When I select service 1 PASSED
+
+RunCukesTest > | 1 |.And I reset the current operation PASSED
+
+RunCukesTest > | 1 |.Then the machine mode is WAITING PASSED
+
+RunCukesTest > | 1 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | 1 |.classMethod PASSED
+
+RunCukesTest > | 3 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 3 |.When I select service 3 PASSED
+
+RunCukesTest > | 3 |.And I reset the current operation PASSED
+
+RunCukesTest > | 3 |.Then the machine mode is WAITING PASSED
+
+RunCukesTest > | 3 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | 3 |.classMethod PASSED
+
+RunCukesTest > | 4 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 4 |.When I select service 4 PASSED
+
+RunCukesTest > | 4 |.And I reset the current operation PASSED
+
+RunCukesTest > | 4 |.Then the machine mode is WAITING PASSED
+
+RunCukesTest > | 4 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | 4 |.classMethod PASSED
+
+RunCukesTest > | 5 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 5 |.When I select service 5 PASSED
+
+RunCukesTest > | 5 |.And I reset the current operation PASSED
+
+RunCukesTest > | 5 |.Then the machine mode is WAITING PASSED
+
+RunCukesTest > | 5 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | 5 |.classMethod PASSED
+
+RunCukesTest > | 6 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | 6 |.When I select service 6 PASSED
+
+RunCukesTest > | 6 |.And I reset the current operation PASSED
+
+RunCukesTest > | 6 |.Then the machine mode is WAITING PASSED
+
+RunCukesTest > | 6 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | 6 |.classMethod PASSED
+
+RunCukesTest > Scenario: A purchase request with no available recipe slots is rejected safely.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: A purchase request with no available recipe slots is rejected safely.When a purchase request selects invalid index 3 with payment 75 PASSED
+
+RunCukesTest > Scenario: A purchase request with no available recipe slots is rejected safely.Then the invalid selection is rejected without charging the 75 money units PASSED
+
+RunCukesTest > Scenario: A purchase request with no available recipe slots is rejected safely.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: A purchase request with no available recipe slots is rejected safely.classMethod PASSED
+
+RunCukesTest > Scenario: Resubmitting an existing recipe object does not duplicate it.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Resubmitting an existing recipe object does not duplicate it.Given the standard three recipes are available PASSED
+
+RunCukesTest > Scenario: Resubmitting an existing recipe object does not duplicate it.When I resubmit the existing recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Resubmitting an existing recipe object does not duplicate it.Then the operation status is RECIPE_NOT_ADDED PASSED
+
+RunCukesTest > Scenario: Resubmitting an existing recipe object does not duplicate it.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Resubmitting an existing recipe object does not duplicate it.And the recipe book contains 3 recipes PASSED
+
+RunCukesTest > Scenario: Resubmitting an existing recipe object does not duplicate it.And recipe at index 0 is "Coffee" priced 50 using 3 coffee 1 milk 1 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: Resubmitting an existing recipe object does not duplicate it.classMethod PASSED
+
+RunCukesTest > | price | -1 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | price | -1 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | price | -1 |.When I enter value "-1" for recipe field price PASSED
+
+RunCukesTest > | price | -1 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | price | -1 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | price | -1 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | price | -1 |.classMethod PASSED
+
+RunCukesTest > | coffee | -1 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | coffee | -1 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | coffee | -1 |.When I enter value "-1" for recipe field coffee PASSED
+
+RunCukesTest > | coffee | -1 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | coffee | -1 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | coffee | -1 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | coffee | -1 |.classMethod PASSED
+
+RunCukesTest > | milk | -1 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | milk | -1 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | milk | -1 |.When I enter value "-1" for recipe field milk PASSED
+
+RunCukesTest > | milk | -1 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | milk | -1 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | milk | -1 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | milk | -1 |.classMethod PASSED
+
+RunCukesTest > | sugar | -1 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | sugar | -1 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | sugar | -1 |.When I enter value "-1" for recipe field sugar PASSED
+
+RunCukesTest > | sugar | -1 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | sugar | -1 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | sugar | -1 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | sugar | -1 |.classMethod PASSED
+
+RunCukesTest > | chocolate | -1 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | chocolate | -1 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | chocolate | -1 |.When I enter value "-1" for recipe field chocolate PASSED
+
+RunCukesTest > | chocolate | -1 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | chocolate | -1 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | chocolate | -1 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | chocolate | -1 |.classMethod PASSED
+
+RunCukesTest > | price | abc |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | price | abc |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | price | abc |.When I enter value "abc" for recipe field price PASSED
+
+RunCukesTest > | price | abc |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | price | abc |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | price | abc |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | price | abc |.classMethod PASSED
+
+RunCukesTest > | coffee | abc |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | coffee | abc |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | coffee | abc |.When I enter value "abc" for recipe field coffee PASSED
+
+RunCukesTest > | coffee | abc |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | coffee | abc |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | coffee | abc |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | coffee | abc |.classMethod PASSED
+
+RunCukesTest > | milk | abc |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | milk | abc |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | milk | abc |.When I enter value "abc" for recipe field milk PASSED
+
+RunCukesTest > | milk | abc |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | milk | abc |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | milk | abc |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | milk | abc |.classMethod PASSED
+
+RunCukesTest > | sugar | abc |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | sugar | abc |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | sugar | abc |.When I enter value "abc" for recipe field sugar PASSED
+
+RunCukesTest > | sugar | abc |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | sugar | abc |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | sugar | abc |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | sugar | abc |.classMethod PASSED
+
+RunCukesTest > | chocolate | abc |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | chocolate | abc |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | chocolate | abc |.When I enter value "abc" for recipe field chocolate PASSED
+
+RunCukesTest > | chocolate | abc |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | chocolate | abc |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | chocolate | abc |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | chocolate | abc |.classMethod PASSED
+
+RunCukesTest > | price | 1.5 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | price | 1.5 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | price | 1.5 |.When I enter value "1.5" for recipe field price PASSED
+
+RunCukesTest > | price | 1.5 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | price | 1.5 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | price | 1.5 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | price | 1.5 |.classMethod PASSED
+
+RunCukesTest > | coffee | 1.5 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | coffee | 1.5 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | coffee | 1.5 |.When I enter value "1.5" for recipe field coffee PASSED
+
+RunCukesTest > | coffee | 1.5 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | coffee | 1.5 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | coffee | 1.5 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | coffee | 1.5 |.classMethod PASSED
+
+RunCukesTest > | milk | 1.5 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | milk | 1.5 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | milk | 1.5 |.When I enter value "1.5" for recipe field milk PASSED
+
+RunCukesTest > | milk | 1.5 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | milk | 1.5 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | milk | 1.5 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | milk | 1.5 |.classMethod PASSED
+
+RunCukesTest > | sugar | 1.5 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | sugar | 1.5 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | sugar | 1.5 |.When I enter value "1.5" for recipe field sugar PASSED
+
+RunCukesTest > | sugar | 1.5 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | sugar | 1.5 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | sugar | 1.5 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | sugar | 1.5 |.classMethod PASSED
+
+RunCukesTest > | chocolate | 1.5 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | chocolate | 1.5 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | chocolate | 1.5 |.When I enter value "1.5" for recipe field chocolate PASSED
+
+RunCukesTest > | chocolate | 1.5 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | chocolate | 1.5 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | chocolate | 1.5 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | chocolate | 1.5 |.classMethod PASSED
+
+RunCukesTest > | price | 2147483648 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | price | 2147483648 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | price | 2147483648 |.When I enter value "2147483648" for recipe field price PASSED
+
+RunCukesTest > | price | 2147483648 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | price | 2147483648 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | price | 2147483648 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | price | 2147483648 |.classMethod PASSED
+
+RunCukesTest > | coffee | 2147483648 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | coffee | 2147483648 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | coffee | 2147483648 |.When I enter value "2147483648" for recipe field coffee PASSED
+
+RunCukesTest > | coffee | 2147483648 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | coffee | 2147483648 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | coffee | 2147483648 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | coffee | 2147483648 |.classMethod PASSED
+
+RunCukesTest > | milk | 2147483648 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | milk | 2147483648 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | milk | 2147483648 |.When I enter value "2147483648" for recipe field milk PASSED
+
+RunCukesTest > | milk | 2147483648 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | milk | 2147483648 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | milk | 2147483648 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | milk | 2147483648 |.classMethod PASSED
+
+RunCukesTest > | sugar | 2147483648 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | sugar | 2147483648 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | sugar | 2147483648 |.When I enter value "2147483648" for recipe field sugar PASSED
+
+RunCukesTest > | sugar | 2147483648 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | sugar | 2147483648 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | sugar | 2147483648 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | sugar | 2147483648 |.classMethod PASSED
+
+RunCukesTest > | chocolate | 2147483648 |.Given a fresh coffee maker PASSED
+
+RunCukesTest > | chocolate | 2147483648 |.Given a recipe form containing valid values PASSED
+
+RunCukesTest > | chocolate | 2147483648 |.When I enter value "2147483648" for recipe field chocolate PASSED
+
+RunCukesTest > | chocolate | 2147483648 |.Then the invalid recipe value is rejected and the valid form is unchanged PASSED
+
+RunCukesTest > | chocolate | 2147483648 |.And the machine mode is WAITING PASSED
+
+RunCukesTest > | chocolate | 2147483648 |.And the recipe book contains 0 recipes PASSED
+
+RunCukesTest > | chocolate | 2147483648 |.classMethod PASSED
+
+RunCukesTest > Scenario: A missing recipe name does not erase the current form name.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: A missing recipe name does not erase the current form name.Given a recipe form containing valid values PASSED
+
+RunCukesTest > Scenario: A missing recipe name does not erase the current form name.When the recipe form receives a missing name PASSED
+
+RunCukesTest > Scenario: A missing recipe name does not erase the current form name.Then the existing recipe form name is preserved PASSED
+
+RunCukesTest > Scenario: A missing recipe name does not erase the current form name.When I submit the valid recipe form PASSED
+
+RunCukesTest > Scenario: A missing recipe name does not erase the current form name.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: A missing recipe name does not erase the current form name.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: A missing recipe name does not erase the current form name.And recipe at index 0 is "Form" priced 50 using 1 coffee 2 milk 3 sugar 4 chocolate PASSED
+
+RunCukesTest > Scenario: A missing recipe name does not erase the current form name.classMethod PASSED
+
+RunCukesTest > Scenario: An unsuccessful purchase preserves all paid money and inventory.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: An unsuccessful purchase preserves all paid money and inventory.When I add recipe "TooLarge" priced 50 using 16 coffee 1 milk 1 sugar 1 chocolate PASSED
+
+RunCukesTest > Scenario: An unsuccessful purchase preserves all paid money and inventory.And I insert 75 money units PASSED
+
+RunCukesTest > Scenario: An unsuccessful purchase preserves all paid money and inventory.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: An unsuccessful purchase preserves all paid money and inventory.Then all 75 money units remain available to the customer PASSED
+
+RunCukesTest > Scenario: An unsuccessful purchase preserves all paid money and inventory.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: An unsuccessful purchase preserves all paid money and inventory.classMethod PASSED
+
+RunCukesTest > Scenario: Replenishment makes a formerly impossible drink available.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Replenishment makes a formerly impossible drink available.When I add recipe "LargeCoffee" priced 50 using 16 coffee 1 milk 1 sugar 1 chocolate PASSED
+
+RunCukesTest > Scenario: Replenishment makes a formerly impossible drink available.And I add inventory 1 coffee 0 milk 0 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: Replenishment makes a formerly impossible drink available.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Replenishment makes a formerly impossible drink available.When I insert 75 money units PASSED
+
+RunCukesTest > Scenario: Replenishment makes a formerly impossible drink available.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Replenishment makes a formerly impossible drink available.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Replenishment makes a formerly impossible drink available.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Replenishment makes a formerly impossible drink available.And the return tray contains 25 money units PASSED
+
+RunCukesTest > Scenario: Replenishment makes a formerly impossible drink available.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Replenishment makes a formerly impossible drink available.And the inventory report shows 0 coffee 14 milk 14 sugar 14 chocolate PASSED
+
+RunCukesTest > Scenario: Replenishment makes a formerly impossible drink available.classMethod PASSED
+
+RunCukesTest > Scenario: An unpaid purchase does not consume stock.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: An unpaid purchase does not consume stock.Given the standard three recipes are available PASSED
+
+RunCukesTest > Scenario: An unpaid purchase does not consume stock.When I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: An unpaid purchase does not consume stock.Then the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: An unpaid purchase does not consume stock.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: An unpaid purchase does not consume stock.And the return tray contains 0 money units PASSED
+
+RunCukesTest > Scenario: An unpaid purchase does not consume stock.And the inventory report shows 15 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: An unpaid purchase does not consume stock.classMethod PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.When I add recipe "Single" priced 10 using 0 coffee 5 milk 0 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And the inventory report shows 15 coffee 0 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.When I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.Then the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And all 10 money units remain available to the customer PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.And the inventory report shows 15 coffee 0 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only milk and a fourth is not dispensed.classMethod PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.When I add recipe "Single" priced 10 using 0 coffee 0 milk 5 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And the inventory report shows 15 coffee 15 milk 0 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.When I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.Then the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And all 10 money units remain available to the customer PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.And the inventory report shows 15 coffee 15 milk 0 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only sugar and a fourth is not dispensed.classMethod PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.When I add recipe "Single" priced 10 using 0 coffee 0 milk 0 sugar 5 chocolate PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And the inventory report shows 15 coffee 15 milk 15 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.When I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.Then the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And all 10 money units remain available to the customer PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.And the inventory report shows 15 coffee 15 milk 15 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only chocolate and a fourth is not dispensed.classMethod PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.Given a fresh coffee maker PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.When I add recipe "Single" priced 10 using 5 coffee 0 milk 0 sugar 0 chocolate PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.Then the operation status is OK PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And the inserted money is 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And the inventory report shows 0 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.When I insert 10 money units PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And I purchase recipe at index 0 PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.Then the machine mode is WAITING PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And all 10 money units remain available to the customer PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.And the inventory report shows 0 coffee 15 milk 15 sugar 15 chocolate PASSED
+
+RunCukesTest > Scenario: Three purchases exhaust only coffee and a fourth is not dispensed.classMethod PASSED
+
+> Task :jacocoTestCoverageVerification
+> Task :check
+> Task :jacocoTestReport
+
+[Incubating] Problems report is available at: file:///workspace/CoffeeMaker_Cucumber_Coverage/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 9s
+7 actionable tasks: 7 executed
+Couldn't create user preferences directory. User preferences are unusable.
+java.io.IOException: No such file or directory

@@ -1,0 +1,147 @@
+[
+  {
+    "id": "M01_capacity",
+    "file": "RecipeBook.java",
+    "before": "NUM_RECIPES = 3",
+    "after": "NUM_RECIPES = 4",
+    "failed_scenarios": [
+      "The fourth distinct recipe is rejected"
+    ],
+    "total_scenarios": 87
+  },
+  {
+    "id": "M02_deletion",
+    "file": "RecipeBook.java",
+    "before": "recipeArray[recipeToDelete] = null;",
+    "after": "recipeArray[recipeToDelete] = new Recipe();",
+    "failed_scenarios": [
+      "Delete an existing recipe and preserve other recipes",
+      "Deleting a recipe frees capacity for a new recipe"
+    ],
+    "total_scenarios": 87
+  },
+  {
+    "id": "M03_edited_name",
+    "file": "RecipeBook.java",
+    "before": "newRecipe.setName(recipeName);",
+    "after": "newRecipe.setName(\"\");",
+    "failed_scenarios": [
+      "Edit updates values but keeps the original name"
+    ],
+    "total_scenarios": 87
+  },
+  {
+    "id": "M04_sugar_validation",
+    "file": "Inventory.java",
+    "before": "amtSugar >= 0",
+    "after": "amtSugar <= 0",
+    "failed_scenarios": [
+      "Add different amounts to each ingredient",
+      "Inventory additions accumulate",
+      "Each negative inventory amount is rejected"
+    ],
+    "total_scenarios": 87
+  },
+  {
+    "id": "M05_coffee_consumption",
+    "file": "Inventory.java",
+    "before": "Inventory.coffee -= r.getAmtCoffee();",
+    "after": "Inventory.coffee += r.getAmtCoffee();",
+    "failed_scenarios": [
+      "Edited price and ingredients govern subsequent purchase",
+      "Exact payment",
+      "Overpayment",
+      "Middle recipe purchase",
+      "Last recipe purchase",
+      "Exactly available ingredients can be consumed",
+      "Money returned from several purchases accumulates until collected",
+      "Replenishment makes a formerly impossible drink available",
+      "Three purchases exhaust only coffee and a fourth is not dispensed"
+    ],
+    "total_scenarios": 87
+  },
+  {
+    "id": "M06_exact_payment",
+    "file": "CoffeeMaker.java",
+    "before": "getRecipes()[recipeToPurchase].getPrice() <= amtPaid",
+    "after": "getRecipes()[recipeToPurchase].getPrice() < amtPaid",
+    "failed_scenarios": [
+      "Exact payment",
+      "Exactly available ingredients can be consumed",
+      "Three purchases exhaust only milk and a fourth is not dispensed",
+      "Three purchases exhaust only sugar and a fourth is not dispensed",
+      "Three purchases exhaust only chocolate and a fourth is not dispensed",
+      "Three purchases exhaust only coffee and a fourth is not dispensed"
+    ],
+    "total_scenarios": 87
+  },
+  {
+    "id": "M07_wrong_change",
+    "file": "CoffeeMaker.java",
+    "before": "change = amtPaid - getRecipes()[recipeToPurchase].getPrice();",
+    "after": "change = amtPaid + getRecipes()[recipeToPurchase].getPrice();",
+    "failed_scenarios": [
+      "Edited price and ingredients govern subsequent purchase",
+      "Exact payment",
+      "Overpayment",
+      "Middle recipe purchase",
+      "Last recipe purchase",
+      "Several inserted payments accumulate",
+      "Exactly available ingredients can be consumed",
+      "A recipe using only chocolate leaves other ingredients unchanged",
+      "Money returned from several purchases accumulates until collected",
+      "Replenishment makes a formerly impossible drink available",
+      "Three purchases exhaust only milk and a fourth is not dispensed",
+      "Three purchases exhaust only sugar and a fourth is not dispensed",
+      "Three purchases exhaust only chocolate and a fourth is not dispensed",
+      "Three purchases exhaust only coffee and a fourth is not dispensed"
+    ],
+    "total_scenarios": 87
+  },
+  {
+    "id": "M08_milk_consumption",
+    "file": "Inventory.java",
+    "before": "Inventory.milk -= r.getAmtMilk();",
+    "after": "Inventory.milk += r.getAmtMilk();",
+    "failed_scenarios": [
+      "Edited price and ingredients govern subsequent purchase",
+      "Exact payment",
+      "Overpayment",
+      "Middle recipe purchase",
+      "Last recipe purchase",
+      "Exactly available ingredients can be consumed",
+      "Money returned from several purchases accumulates until collected",
+      "Replenishment makes a formerly impossible drink available",
+      "Three purchases exhaust only milk and a fourth is not dispensed"
+    ],
+    "total_scenarios": 87
+  },
+  {
+    "id": "M09_chocolate_consumption",
+    "file": "Inventory.java",
+    "before": "Inventory.chocolate -= r.getAmtChocolate();",
+    "after": "Inventory.chocolate += r.getAmtChocolate();",
+    "failed_scenarios": [
+      "Edited price and ingredients govern subsequent purchase",
+      "Last recipe purchase",
+      "Exactly available ingredients can be consumed",
+      "A recipe using only chocolate leaves other ingredients unchanged",
+      "Replenishment makes a formerly impossible drink available",
+      "Three purchases exhaust only chocolate and a fourth is not dispensed"
+    ],
+    "total_scenarios": 87
+  },
+  {
+    "id": "M10_wrong_recipe",
+    "file": "CoffeeMaker.java",
+    "before": "inventory.useIngredients(getRecipes()[recipeToPurchase])",
+    "after": "inventory.useIngredients(getRecipes()[0])",
+    "failed_scenarios": [
+      "Edited price and ingredients govern subsequent purchase",
+      "Middle recipe purchase",
+      "Last recipe purchase",
+      "Money returned from several purchases accumulates until collected"
+    ],
+    "total_scenarios": 87
+  }
+]

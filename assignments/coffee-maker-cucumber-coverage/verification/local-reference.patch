@@ -1,0 +1,74 @@
+diff -ru --strip-trailing-cr /workspace/scratch/coffee-cucumber/Assign/src/main/java/edu/ncsu/csc326/coffeemaker/CoffeeMaker.java /workspace/scratch/coffee-cucumber-reference-original-ui/src/main/java/edu/ncsu/csc326/coffeemaker/CoffeeMaker.java
+--- /workspace/scratch/coffee-cucumber/Assign/src/main/java/edu/ncsu/csc326/coffeemaker/CoffeeMaker.java	2018-04-14 00:31:09.000000000 +0000
++++ /workspace/scratch/coffee-cucumber-reference-original-ui/src/main/java/edu/ncsu/csc326/coffeemaker/CoffeeMaker.java	2026-10-28 19:32:15.320232002 +0000
+@@ -100,7 +100,7 @@
+     public synchronized int makeCoffee(int recipeToPurchase, int amtPaid) throws RecipeException {
+         int change = 0;
+         
+-        if (getRecipes()[recipeToPurchase] == null) {
++        if (recipeToPurchase < 0 || recipeToPurchase >= getRecipes().length || getRecipes()[recipeToPurchase] == null) {
+         	System.out.println("No recipe!");
+         	change = amtPaid;
+         } else if (getRecipes()[recipeToPurchase].getPrice() <= amtPaid) {
+diff -ru --strip-trailing-cr /workspace/scratch/coffee-cucumber/Assign/src/main/java/edu/ncsu/csc326/coffeemaker/Inventory.java /workspace/scratch/coffee-cucumber-reference-original-ui/src/main/java/edu/ncsu/csc326/coffeemaker/Inventory.java
+--- /workspace/scratch/coffee-cucumber/Assign/src/main/java/edu/ncsu/csc326/coffeemaker/Inventory.java	2018-04-14 00:31:09.000000000 +0000
++++ /workspace/scratch/coffee-cucumber-reference-original-ui/src/main/java/edu/ncsu/csc326/coffeemaker/Inventory.java	2018-07-05 22:32:25.000000000 +0000
+@@ -192,7 +192,7 @@
+     	} catch (NumberFormatException e) {
+     		throw new InventoryException("Units of sugar must be a positive integer");
+     	}
+-		if (amtSugar <= 0) {
++		if (amtSugar >= 0) {
+ 			Inventory.sugar += amtSugar;
+ 		} else {
+ 			throw new InventoryException("Units of sugar must be a positive integer");
+@@ -230,7 +230,7 @@
+      */
+     public synchronized boolean useIngredients(Recipe r) {
+     	if (enoughIngredients(r)) {
+-	    	Inventory.coffee += r.getAmtCoffee();
++	    	Inventory.coffee -= r.getAmtCoffee();
+ 	    	Inventory.milk -= r.getAmtMilk();
+ 	    	Inventory.sugar -= r.getAmtSugar();
+ 	    	Inventory.chocolate -= r.getAmtChocolate();
+diff -ru --strip-trailing-cr /workspace/scratch/coffee-cucumber/Assign/src/main/java/edu/ncsu/csc326/coffeemaker/RecipeBook.java /workspace/scratch/coffee-cucumber-reference-original-ui/src/main/java/edu/ncsu/csc326/coffeemaker/RecipeBook.java
+--- /workspace/scratch/coffee-cucumber/Assign/src/main/java/edu/ncsu/csc326/coffeemaker/RecipeBook.java	2018-04-14 00:31:09.000000000 +0000
++++ /workspace/scratch/coffee-cucumber-reference-original-ui/src/main/java/edu/ncsu/csc326/coffeemaker/RecipeBook.java	2018-07-05 22:32:25.000000000 +0000
+@@ -18,7 +18,7 @@
+ 	/** Array of recipes in coffee maker*/
+ 	private Recipe [] recipeArray;
+ 	/** Number of recipes in coffee maker */
+-	private final int NUM_RECIPES = 4; 
++	private final int NUM_RECIPES = 3; 
+ 	
+ 	/**
+ 	 * Default constructor for a RecipeBook.
+@@ -68,9 +68,12 @@
+ 	 * @return String
+ 	 */
+ 	public synchronized String deleteRecipe(int recipeToDelete) {
++		if (recipeToDelete < 0 || recipeToDelete >= recipeArray.length) {
++			return null;
++		}
+ 		if (recipeArray[recipeToDelete] != null) {
+ 			String recipeName = recipeArray[recipeToDelete].getName();
+-			recipeArray[recipeToDelete] = new Recipe();
++			recipeArray[recipeToDelete] = null;
+ 			return recipeName;
+ 		} else {
+ 			return null;
+@@ -85,10 +88,13 @@
+ 	 * @return String
+ 	 */
+ 	public synchronized String editRecipe(int recipeToEdit, Recipe newRecipe) {
++		if (recipeToEdit < 0 || recipeToEdit >= recipeArray.length) {
++			return null;
++		}
+ 		if (recipeArray[recipeToEdit] != null) {
+ 			String recipeName = recipeArray[recipeToEdit].getName();
+-			newRecipe.setName("");
+ 			recipeArray[recipeToEdit] = newRecipe;
++			newRecipe.setName(recipeName);
+ 			return recipeName;
+ 		} else {
+ 			return null;

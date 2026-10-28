@@ -1,0 +1,10 @@
+M01_capacity: detected; 1 of 87 scenarios failed
+M02_deletion: detected; 2 of 87 scenarios failed
+M03_edited_name: detected; 1 of 87 scenarios failed
+M04_sugar_validation: detected; 3 of 87 scenarios failed
+M05_coffee_consumption: detected; 9 of 87 scenarios failed
+M06_exact_payment: detected; 6 of 87 scenarios failed
+M07_wrong_change: detected; 14 of 87 scenarios failed
+M08_milk_consumption: detected; 9 of 87 scenarios failed
+M09_chocolate_consumption: detected; 6 of 87 scenarios failed
+M10_wrong_recipe: detected; 4 of 87 scenarios failed

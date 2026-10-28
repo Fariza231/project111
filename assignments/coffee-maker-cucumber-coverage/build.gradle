@@ -1,0 +1,53 @@
+plugins { id 'java'; id 'jacoco' }
+repositories { mavenCentral() }
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+dependencies {
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'info.cukes:cucumber-java:1.2.5'
+    testImplementation 'info.cukes:cucumber-junit:1.2.5'
+}
+if (project.hasProperty('domainSource')) {
+    sourceSets.main.java.setSrcDirs([project.property('domainSource')])
+}
+test {
+    // Compatibility for Cucumber 1.2.5 / XStream on this Java 21 runner.
+    jvmArgs '--add-opens=java.base/java.util=ALL-UNNAMED',
+            '--add-opens=java.base/java.lang=ALL-UNNAMED',
+            '--add-opens=java.base/java.lang.reflect=ALL-UNNAMED',
+            '--add-opens=java.base/java.text=ALL-UNNAMED',
+            '--add-opens=java.base/java.io=ALL-UNNAMED',
+            '--add-opens=java.desktop/java.awt.font=ALL-UNNAMED'
+    testLogging { events 'passed', 'failed', 'skipped' }
+}
+
+jacoco { toolVersion = '0.8.12' }
+test { finalizedBy jacocoTestReport }
+jacocoTestReport {
+    dependsOn test
+    reports { xml.required = true; html.required = true; csv.required = true }
+}
+
+jacocoTestCoverageVerification {
+    dependsOn test
+    violationRules {
+        rule {
+            element = 'CLASS'
+            includes = [
+                'edu.ncsu.csc326.coffeemaker.CoffeeMaker',
+                'edu.ncsu.csc326.coffeemaker.CoffeeMakerUI',
+                'edu.ncsu.csc326.coffeemaker.Inventory',
+                'edu.ncsu.csc326.coffeemaker.Recipe',
+                'edu.ncsu.csc326.coffeemaker.RecipeBook'
+            ]
+            limit {
+                counter = 'BRANCH'
+                value = 'COVEREDRATIO'
+                minimum = 0.75
+            }
+        }
+    }
+}
+check.dependsOn jacocoTestCoverageVerification
