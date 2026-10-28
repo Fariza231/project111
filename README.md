@@ -1,5 +1,11 @@
 # Assignment files
 
+## Current: Unifying Use Cases and Tests using Cucumber
+
+**[Download CoffeeMaker_Cucumber_FINAL.zip](assignments/coffee-maker-cucumber-final/CoffeeMaker_Cucumber_FINAL.zip)** for the latest revision of the assignment shown as 5/10. This replaces the older Cucumber ZIPs for that assignment. [Validation and limitations](assignments/coffee-maker-cucumber-final/README.md).
+
+## Previous submissions (retained for reference)
+
 ## CoffeeMaker Cucumber
 
 Files are in [assignments/coffee-maker-cucumber](assignments/coffee-maker-cucumber).

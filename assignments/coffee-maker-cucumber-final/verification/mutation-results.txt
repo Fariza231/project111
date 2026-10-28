@@ -1,0 +1,5 @@
+capacity: detected; 1 of 18 scenarios failed
+deletion: detected; 2 of 18 scenarios failed
+edited_name: detected; 1 of 18 scenarios failed
+sugar_validation: detected; 2 of 18 scenarios failed
+coffee_consumption: detected; 3 of 18 scenarios failed
