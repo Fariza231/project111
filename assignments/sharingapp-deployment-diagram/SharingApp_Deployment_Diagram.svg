@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1190.5511811023623" height="841.8897637795277" viewBox="0 0 1190.5511811023623 841.8897637795277">
+<rect width="100%" height="100%" fill="white"/>
+<text x="36" y="43.0" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="bold" text-anchor="start">SharingApp | UML Deployment Diagram</text>
+<text x="36" y="67.0" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" text-anchor="start">Specification-level target architecture: remote persistence, mobile and web clients</text>
+<text x="1154.5511811023623" y="42.0" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" text-anchor="end">Fariza Arstanbek</text>
+<text x="1154.5511811023623" y="61.0" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="end">29 October 2026</text>
+<line x1="36" y1="82.0" x2="1154.5511811023623" y2="82.0" stroke="#B9C7D6" stroke-width="1"/>
+<rect x="35" y="126.8897637795277" width="270" height="235" fill="#FFFFFF" stroke="#17324D" stroke-width="1.4"/>
+<polygon points="35,126.8897637795277 45,117.8897637795277 315,117.8897637795277 305,126.8897637795277" fill="#EAF2FA" stroke="#17324D" stroke-width="1.2"/>
+<polygon points="305,361.8897637795277 315,352.8897637795277 315,117.8897637795277 305,126.8897637795277" fill="#EAF2FA" stroke="#17324D" stroke-width="1.2"/>
+<text x="47" y="146.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">«device»</text>
+<text x="47" y="166.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start">Android Mobile Device</text>
+<rect x="50" y="181.8897637795277" width="240" height="165" fill="#E5F3EF" stroke="#B9C7D6" stroke-width="1"/>
+<text x="62" y="199.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">«executionEnvironment»</text>
+<text x="62" y="217.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="start">Android Runtime</text>
+<polygon points="65,276.8897637795277 275,276.8897637795277 275,239.8897637795277 265,229.8897637795277 65,229.8897637795277" fill="#EAF2FA" stroke="#17324D" stroke-width="1.2"/>
+<line x1="265" y1="229.8897637795277" x2="265" y2="239.8897637795277" stroke="#17324D" stroke-width="1"/>
+<line x1="265" y1="239.8897637795277" x2="275" y2="239.8897637795277" stroke="#17324D" stroke-width="1"/>
+<text x="75" y="247.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«artifact»</text>
+<text x="75" y="265.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="start">SharingMobile.apk</text>
+<rect x="65" y="291.8897637795277" width="210" height="45" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<text x="75" y="307.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«component»</text>
+<text x="75" y="325.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="bold" text-anchor="start">Sharing Mobile App</text>
+<rect x="250" y="302.8897637795277" width="17" height="22" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="246" y="307.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="246" y="315.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<line x1="170" y1="276.8897637795277" x2="170" y2="291.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="170" y1="291.8897637795277" x2="166.5" y2="285.82758595303665" stroke="#17324D" stroke-width="1.1"/>
+<line x1="170" y1="291.8897637795277" x2="173.5" y2="285.82758595303665" stroke="#17324D" stroke-width="1.1"/>
+<text x="181" y="286.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«manifest»</text>
+<rect x="35" y="401.8897637795277" width="270" height="235" fill="#FFFFFF" stroke="#17324D" stroke-width="1.4"/>
+<polygon points="35,401.8897637795277 45,392.8897637795277 315,392.8897637795277 305,401.8897637795277" fill="#EAF2FA" stroke="#17324D" stroke-width="1.2"/>
+<polygon points="305,636.8897637795277 315,627.8897637795277 315,392.8897637795277 305,401.8897637795277" fill="#EAF2FA" stroke="#17324D" stroke-width="1.2"/>
+<text x="47" y="421.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">«device»</text>
+<text x="47" y="441.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start">Browser Client Device</text>
+<rect x="50" y="456.8897637795277" width="240" height="165" fill="#E5F3EF" stroke="#B9C7D6" stroke-width="1"/>
+<text x="62" y="474.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">«executionEnvironment»</text>
+<text x="62" y="492.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="start">Web Browser</text>
+<polygon points="65,551.8897637795277 275,551.8897637795277 275,514.8897637795277 265,504.8897637795277 65,504.8897637795277" fill="#EAF2FA" stroke="#17324D" stroke-width="1.2"/>
+<line x1="265" y1="504.8897637795277" x2="265" y2="514.8897637795277" stroke="#17324D" stroke-width="1"/>
+<line x1="265" y1="514.8897637795277" x2="275" y2="514.8897637795277" stroke="#17324D" stroke-width="1"/>
+<text x="75" y="522.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«artifact»</text>
+<text x="75" y="540.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="start">SharingWeb.html</text>
+<rect x="65" y="566.8897637795277" width="210" height="45" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<text x="75" y="582.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«component»</text>
+<text x="75" y="600.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="bold" text-anchor="start">Sharing Web App</text>
+<rect x="250" y="577.8897637795277" width="17" height="22" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="246" y="582.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="246" y="590.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<line x1="170" y1="551.8897637795277" x2="170" y2="566.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="170" y1="566.8897637795277" x2="166.5" y2="560.8275859530366" stroke="#17324D" stroke-width="1.1"/>
+<line x1="170" y1="566.8897637795277" x2="173.5" y2="560.8275859530366" stroke="#17324D" stroke-width="1.1"/>
+<text x="181" y="561.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«manifest»</text>
+<rect x="390" y="126.8897637795277" width="760" height="510" fill="#FFFFFF" stroke="#17324D" stroke-width="1.4"/>
+<polygon points="390,126.8897637795277 400,117.8897637795277 1160,117.8897637795277 1150,126.8897637795277" fill="#EAF2FA" stroke="#17324D" stroke-width="1.2"/>
+<polygon points="1150,636.8897637795277 1160,627.8897637795277 1160,117.8897637795277 1150,126.8897637795277" fill="#EAF2FA" stroke="#17324D" stroke-width="1.2"/>
+<text x="402" y="146.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">«device»</text>
+<text x="402" y="166.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start">Server Device</text>
+<rect x="410" y="186.8897637795277" width="720" height="430" fill="#E5F3EF" stroke="#B9C7D6" stroke-width="1"/>
+<text x="422" y="204.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">«executionEnvironment»</text>
+<text x="422" y="222.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="start">Shared Java Runtime (one execution environment)</text>
+<line x1="315" y1="245.8897637795277" x2="390" y2="245.8897637795277" stroke="#17324D" stroke-width="1.6"/>
+<text x="347" y="228.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="middle">HTTP</text>
+<line x1="315" y1="520.8897637795277" x2="390" y2="520.8897637795277" stroke="#17324D" stroke-width="1.6"/>
+<text x="347" y="503.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="middle">HTTP</text>
+<polygon points="435,296.8897637795277 615,296.8897637795277 615,244.8897637795277 605,234.8897637795277 435,234.8897637795277" fill="#EAF2FA" stroke="#17324D" stroke-width="1.2"/>
+<line x1="605" y1="234.8897637795277" x2="605" y2="244.8897637795277" stroke="#17324D" stroke-width="1"/>
+<line x1="605" y1="244.8897637795277" x2="615" y2="244.8897637795277" stroke="#17324D" stroke-width="1"/>
+<text x="445" y="252.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«artifact»</text>
+<text x="445" y="270.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="start">WebServer.jar</text>
+<polygon points="680,296.8897637795277 860,296.8897637795277 860,244.8897637795277 850,234.8897637795277 680,234.8897637795277" fill="#EAF2FA" stroke="#17324D" stroke-width="1.2"/>
+<line x1="850" y1="234.8897637795277" x2="850" y2="244.8897637795277" stroke="#17324D" stroke-width="1"/>
+<line x1="850" y1="244.8897637795277" x2="860" y2="244.8897637795277" stroke="#17324D" stroke-width="1"/>
+<text x="690" y="252.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«artifact»</text>
+<text x="690" y="270.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="start">ApplicationServer.jar</text>
+<polygon points="925,296.8897637795277 1105,296.8897637795277 1105,244.8897637795277 1095,234.8897637795277 925,234.8897637795277" fill="#EAF2FA" stroke="#17324D" stroke-width="1.2"/>
+<line x1="1095" y1="234.8897637795277" x2="1095" y2="244.8897637795277" stroke="#17324D" stroke-width="1"/>
+<line x1="1095" y1="244.8897637795277" x2="1105" y2="244.8897637795277" stroke="#17324D" stroke-width="1"/>
+<text x="935" y="252.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«artifact»</text>
+<text x="935" y="270.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="start">Database.jar</text>
+<rect x="435" y="351.8897637795277" width="180" height="45" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<text x="445" y="367.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«component»</text>
+<text x="445" y="385.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="bold" text-anchor="start">Web Server</text>
+<rect x="590" y="362.8897637795277" width="17" height="22" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="586" y="367.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="586" y="375.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="680" y="351.8897637795277" width="180" height="45" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<text x="690" y="367.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«component»</text>
+<text x="690" y="385.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="bold" text-anchor="start">Application Server</text>
+<rect x="835" y="362.8897637795277" width="17" height="22" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="831" y="367.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="831" y="375.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="925" y="351.8897637795277" width="180" height="45" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<text x="935" y="367.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«component»</text>
+<text x="935" y="385.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="bold" text-anchor="start">Database</text>
+<rect x="1080" y="362.8897637795277" width="17" height="22" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="1076" y="367.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="1076" y="375.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<line x1="525" y1="296.8897637795277" x2="525" y2="351.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="525" y1="351.8897637795277" x2="521.5" y2="345.82758595303665" stroke="#17324D" stroke-width="1.1"/>
+<line x1="525" y1="351.8897637795277" x2="528.5" y2="345.82758595303665" stroke="#17324D" stroke-width="1.1"/>
+<text x="535" y="327.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«manifest»</text>
+<line x1="770" y1="296.8897637795277" x2="770" y2="351.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="770" y1="351.8897637795277" x2="766.5" y2="345.82758595303665" stroke="#17324D" stroke-width="1.1"/>
+<line x1="770" y1="351.8897637795277" x2="773.5" y2="345.82758595303665" stroke="#17324D" stroke-width="1.1"/>
+<text x="780" y="327.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«manifest»</text>
+<line x1="1015" y1="296.8897637795277" x2="1015" y2="351.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="1015" y1="351.8897637795277" x2="1011.5" y2="345.82758595303665" stroke="#17324D" stroke-width="1.1"/>
+<line x1="1015" y1="351.8897637795277" x2="1018.5" y2="345.82758595303665" stroke="#17324D" stroke-width="1.1"/>
+<text x="1025" y="327.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«manifest»</text>
+<polygon points="435,566.8897637795277 615,566.8897637795277 615,514.8897637795277 605,504.8897637795277 435,504.8897637795277" fill="#F1ECF8" stroke="#17324D" stroke-width="1.2"/>
+<line x1="605" y1="504.8897637795277" x2="605" y2="514.8897637795277" stroke="#17324D" stroke-width="1"/>
+<line x1="605" y1="514.8897637795277" x2="615" y2="514.8897637795277" stroke="#17324D" stroke-width="1"/>
+<text x="445" y="522.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«artifact»</text>
+<text x="445" y="540.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="start">web-server.conf</text>
+<polygon points="925,566.8897637795277 1105,566.8897637795277 1105,514.8897637795277 1095,504.8897637795277 925,504.8897637795277" fill="#F1ECF8" stroke="#17324D" stroke-width="1.2"/>
+<line x1="1095" y1="504.8897637795277" x2="1095" y2="514.8897637795277" stroke="#17324D" stroke-width="1"/>
+<line x1="1095" y1="514.8897637795277" x2="1105" y2="514.8897637795277" stroke="#17324D" stroke-width="1"/>
+<text x="935" y="522.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«artifact»</text>
+<text x="935" y="540.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="start">sharing-schema.xsd</text>
+<line x1="435" y1="266.8897637795277" x2="422" y2="266.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="422" y1="266.8897637795277" x2="422" y2="535.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="422" y1="535.8897637795277" x2="435" y2="535.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="435" y1="535.8897637795277" x2="428.93782217350895" y2="539.3897637795277" stroke="#17324D" stroke-width="1.1"/>
+<line x1="435" y1="535.8897637795277" x2="428.93782217350895" y2="532.3897637795277" stroke="#17324D" stroke-width="1.1"/>
+<text x="440" y="476.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«use» reads routing config</text>
+<line x1="615" y1="535.8897637795277" x2="648" y2="535.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="648" y1="535.8897637795277" x2="648" y2="279.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="648" y1="279.8897637795277" x2="680" y2="279.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="680" y1="279.8897637795277" x2="673.937822173509" y2="283.3897637795277" stroke="#17324D" stroke-width="1.1"/>
+<line x1="680" y1="279.8897637795277" x2="673.937822173509" y2="276.3897637795277" stroke="#17324D" stroke-width="1.1"/>
+<text x="660" y="476.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«use» route target</text>
+<line x1="1105" y1="266.8897637795277" x2="1118" y2="266.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="1118" y1="266.8897637795277" x2="1118" y2="535.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="1118" y1="535.8897637795277" x2="1105" y2="535.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="1105" y1="535.8897637795277" x2="1111.062177826491" y2="532.3897637795277" stroke="#17324D" stroke-width="1.1"/>
+<line x1="1105" y1="535.8897637795277" x2="1111.062177826491" y2="539.3897637795277" stroke="#17324D" stroke-width="1.1"/>
+<text x="943" y="476.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«use» defines DB schema</text>
+<line x1="615" y1="257.8897637795277" x2="680" y2="257.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="680" y1="257.8897637795277" x2="673.937822173509" y2="261.3897637795277" stroke="#17324D" stroke-width="1.1"/>
+<line x1="680" y1="257.8897637795277" x2="673.937822173509" y2="254.3897637795277" stroke="#17324D" stroke-width="1.1"/>
+<text x="632" y="242.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«use»</text>
+<line x1="860" y1="257.8897637795277" x2="925" y2="257.8897637795277" stroke="#17324D" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="925" y1="257.8897637795277" x2="918.937822173509" y2="261.3897637795277" stroke="#17324D" stroke-width="1.1"/>
+<line x1="925" y1="257.8897637795277" x2="918.937822173509" y2="254.3897637795277" stroke="#17324D" stroke-width="1.1"/>
+<text x="877" y="242.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«use»</text>
+<text x="647" y="269.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="8" font-weight="normal" text-anchor="middle">forward</text>
+<text x="892" y="269.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="8" font-weight="normal" text-anchor="middle">query/update</text>
+<text x="435" y="427.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">Parses HTTP requests; forwards</text>
+<text x="435" y="441.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">operation data to Application Server.</text>
+<text x="680" y="427.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">ApplicationServer.jar executes the</text>
+<text x="680" y="441.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">business logic and database</text>
+<text x="680" y="455.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">query/update code.</text>
+<text x="925" y="427.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">Stores users, items, photos, bids and</text>
+<text x="925" y="441.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">lending status.</text>
+<text x="435" y="589.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">All server artifacts and components above share this single execution environment.</text>
+<line x1="36" y1="665.8897637795277" x2="1154.5511811023623" y2="665.8897637795277" stroke="#B9C7D6" stroke-width="1"/>
+<text x="40" y="685.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="start">NOTATION</text>
+<text x="145" y="685.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">3-D node = device; nested frame = execution environment; folded corner = artifact.</text>
+<text x="40" y="706.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">Solid node-to-node line = communication path (HTTP). Dashed arrow = dependency; «manifest» points from an artifact to its implemented component.</text>
+<text x="40" y="730.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">Interpretation: the three primary JARs manifest the web server, application server and database respectively. Database access code is executed within ApplicationServer.jar; no fourth JAR is assumed. Artifact filenames are specification labels, not</text>
+<text x="40" y="744.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">claims about existing server files.</text>
+<text x="40" y="767.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">Both clients reach the same Web Server over HTTP. WebServer.jar uses web-server.conf to route requests to ApplicationServer.jar, which invokes Database.jar for queries/updates. Database.jar uses sharing-schema.xsd. No client connects directly to</text>
+<text x="40" y="781.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">the database.</text>
+<text x="40" y="804.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">Basis: supplied assignment and Capstone 3 User Stories. Remote deployment is assumed by the task; the supplied Android implementation currently persists locally.</text>
+</svg>
