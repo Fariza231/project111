@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1190.5511811023623" height="841.8897637795277" viewBox="0 0 1190.5511811023623 841.8897637795277">
+<rect width="100%" height="100%" fill="white"/>
+<text x="36" y="43.0" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="bold" text-anchor="start">SharingApp | UML Component Diagram</text>
+<text x="36" y="67.0" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" text-anchor="start">Target architecture: shared remote database for Android and web clients</text>
+<text x="1154.5511811023623" y="42.0" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" text-anchor="end">Fariza Arstanbek</text>
+<text x="1154.5511811023623" y="61.0" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="end">29 October 2026</text>
+<line x1="36" y1="82.0" x2="1154.5511811023623" y2="82.0" stroke="#B9C7D6" stroke-width="1"/>
+<text x="40" y="127.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="start">CLIENT COMPONENTS</text>
+<text x="350" y="127.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="start">HTTP ENTRY POINT</text>
+<text x="685" y="127.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="start">BUSINESS LOGIC</text>
+<text x="1010" y="127.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="start">PERSISTENCE</text>
+<rect x="40" y="156.8897637795277" width="205" height="155" fill="#EAF2FA" stroke="#17324D" stroke-width="1.3"/>
+<rect x="216" y="170.8897637795277" width="17" height="22" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="212" y="175.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="212" y="183.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<text x="53" y="178.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">«component»</text>
+<text x="53" y="203.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start">Android Mobile App</text>
+<line x1="52" y1="215.8897637795277" x2="233" y2="215.8897637795277" stroke="#B9C7D6" stroke-width="0.8"/>
+<text x="53" y="236.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Profiles, login/logout</text>
+<text x="53" y="257.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Items, photos, lists and search</text>
+<text x="53" y="278.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Bids, borrowing and returns</text>
+<text x="53" y="299.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Requires ISharingHTTP</text>
+<rect x="26" y="336.8897637795277" width="233" height="195" fill="#FFFFFF" stroke="#B9C7D6" stroke-width="1"/>
+<text x="38" y="348.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">«execution environment» Web browser</text>
+<rect x="40" y="356.8897637795277" width="205" height="155" fill="#EAF2FA" stroke="#17324D" stroke-width="1.3"/>
+<rect x="216" y="370.8897637795277" width="17" height="22" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="212" y="375.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="212" y="383.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<text x="53" y="378.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">«component»</text>
+<text x="53" y="403.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start">Web Application</text>
+<line x1="52" y1="415.8897637795277" x2="233" y2="415.8897637795277" stroke="#B9C7D6" stroke-width="0.8"/>
+<text x="53" y="436.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Browser-accessible client</text>
+<text x="53" y="457.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Presents sharing workflows</text>
+<text x="53" y="478.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Sends requests; displays results</text>
+<text x="53" y="499.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Requires ISharingHTTP</text>
+<rect x="350" y="156.8897637795277" width="220" height="335" fill="#E5F3EF" stroke="#17324D" stroke-width="1.3"/>
+<rect x="541" y="170.8897637795277" width="17" height="22" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="537" y="175.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="537" y="183.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<text x="363" y="178.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">«component»</text>
+<text x="363" y="203.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start">Web Server</text>
+<line x1="362" y1="215.8897637795277" x2="558" y2="215.8897637795277" stroke="#B9C7D6" stroke-width="0.8"/>
+<text x="363" y="236.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Provides ISharingHTTP</text>
+<text x="363" y="257.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Receives HTTP requests from</text>
+<text x="363" y="278.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">both client applications</text>
+<text x="363" y="305.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Parses request type and data</text>
+<text x="363" y="326.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Maps requests to the application</text>
+<text x="363" y="347.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">server contract</text>
+<text x="363" y="374.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Requires IApplicationAPI</text>
+<text x="363" y="395.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Returns HTTP responses</text>
+<rect x="685" y="156.8897637795277" width="220" height="335" fill="#E5F3EF" stroke="#17324D" stroke-width="1.3"/>
+<rect x="876" y="170.8897637795277" width="17" height="22" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="872" y="175.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="872" y="183.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<text x="698" y="178.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">«component»</text>
+<text x="698" y="203.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start">Application Server</text>
+<line x1="697" y1="215.8897637795277" x2="893" y2="215.8897637795277" stroke="#B9C7D6" stroke-width="0.8"/>
+<text x="698" y="236.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Provides IApplicationAPI</text>
+<text x="698" y="257.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Interprets application requests</text>
+<text x="698" y="284.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Account/profile operations</text>
+<text x="698" y="305.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Item CRUD, photos and lists</text>
+<text x="698" y="326.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Keyword search</text>
+<text x="698" y="347.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Bid validation; accept/reject</text>
+<text x="698" y="368.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Borrowing and return status</text>
+<text x="698" y="395.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Requires IDataAccess</text>
+<rect x="1010" y="206.8897637795277" width="145" height="235" fill="#F1ECF8" stroke="#17324D" stroke-width="1.3"/>
+<rect x="1126" y="220.8897637795277" width="17" height="22" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="1122" y="225.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<rect x="1122" y="233.8897637795277" width="8" height="5" fill="#FFFFFF" stroke="#17324D" stroke-width="1"/>
+<text x="1023" y="228.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">«component»</text>
+<text x="1023" y="253.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start">Remote Database</text>
+<line x1="1022" y1="265.8897637795277" x2="1143" y2="265.8897637795277" stroke="#B9C7D6" stroke-width="0.8"/>
+<text x="1023" y="286.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Provides IDataAccess</text>
+<text x="1023" y="313.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Persists and retrieves:</text>
+<text x="1023" y="334.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Users / profiles</text>
+<text x="1023" y="355.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Items / photographs</text>
+<text x="1023" y="376.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Bids / borrower links</text>
+<text x="1023" y="397.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10.5" font-weight="normal" text-anchor="start">Item status</text>
+<line x1="245" y1="234.8897637795277" x2="291" y2="234.8897637795277" stroke="#17324D" stroke-width="1.3"/>
+<path d="M 303 222.8897637795277 A 12 12 0 0 0 303 246.8897637795277" fill="none" stroke="#17324D" stroke-width="1.4"/>
+<circle cx="303" cy="234.8897637795277" r="7" fill="white" stroke="#17324D" stroke-width="1.4"/>
+<line x1="310" y1="234.8897637795277" x2="350" y2="234.8897637795277" stroke="#17324D" stroke-width="1.3"/>
+<text x="303" y="205.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">ISharingHTTP</text>
+<text x="303" y="219.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="8.5" font-weight="normal" text-anchor="middle">HTTP request / response</text>
+<line x1="245" y1="434.8897637795277" x2="291" y2="434.8897637795277" stroke="#17324D" stroke-width="1.3"/>
+<path d="M 303 422.8897637795277 A 12 12 0 0 0 303 446.8897637795277" fill="none" stroke="#17324D" stroke-width="1.4"/>
+<circle cx="303" cy="434.8897637795277" r="7" fill="white" stroke="#17324D" stroke-width="1.4"/>
+<line x1="310" y1="434.8897637795277" x2="350" y2="434.8897637795277" stroke="#17324D" stroke-width="1.3"/>
+<text x="303" y="405.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">ISharingHTTP</text>
+<text x="303" y="419.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="8.5" font-weight="normal" text-anchor="middle">HTTP request / response</text>
+<line x1="570" y1="323.8897637795277" x2="613" y2="323.8897637795277" stroke="#17324D" stroke-width="1.3"/>
+<path d="M 625 311.8897637795277 A 12 12 0 0 0 625 335.8897637795277" fill="none" stroke="#17324D" stroke-width="1.4"/>
+<circle cx="625" cy="323.8897637795277" r="7" fill="white" stroke="#17324D" stroke-width="1.4"/>
+<line x1="632" y1="323.8897637795277" x2="685" y2="323.8897637795277" stroke="#17324D" stroke-width="1.3"/>
+<text x="625" y="294.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">IApplicationAPI</text>
+<text x="625" y="308.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="8.5" font-weight="normal" text-anchor="middle">Requests / results</text>
+<line x1="905" y1="323.8897637795277" x2="943" y2="323.8897637795277" stroke="#17324D" stroke-width="1.3"/>
+<path d="M 955 311.8897637795277 A 12 12 0 0 0 955 335.8897637795277" fill="none" stroke="#17324D" stroke-width="1.4"/>
+<circle cx="955" cy="323.8897637795277" r="7" fill="white" stroke="#17324D" stroke-width="1.4"/>
+<line x1="962" y1="323.8897637795277" x2="1010" y2="323.8897637795277" stroke="#17324D" stroke-width="1.3"/>
+<text x="955" y="294.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">IDataAccess</text>
+<text x="955" y="308.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="8.5" font-weight="normal" text-anchor="middle">Queries / updates</text>
+<line x1="36" y1="556.8897637795277" x2="1154.5511811023623" y2="556.8897637795277" stroke="#B9C7D6" stroke-width="1"/>
+<text x="40" y="576.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="start">INTERFACE CONTRACTS</text>
+<text x="40" y="595.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="start">ISharingHTTP</text>
+<text x="165" y="595.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">Provided by Web Server; required by both clients. Carries account/profile, item, search, bid and lending requests and responses.</text>
+<text x="40" y="630.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="start">IApplicationAPI</text>
+<text x="165" y="630.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">Provided by Application Server; required by Web Server. Accepts parsed operation type, arguments and user context; returns results/errors.</text>
+<text x="40" y="665.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="start">IDataAccess</text>
+<text x="165" y="665.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">Provided by Remote Database; required by Application Server. Supports data retrieval and updates for users, items, bids and lending state.</text>
+<text x="40" y="717.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="bold" text-anchor="start">NOTATION</text>
+<line x1="125" y1="714.8897637795277" x2="153" y2="714.8897637795277" stroke="#17324D" stroke-width="1.3"/>
+<path d="M 165 702.8897637795277 A 12 12 0 0 0 165 726.8897637795277" fill="none" stroke="#17324D" stroke-width="1.4"/>
+<text x="184" y="718.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">Required interface (socket)</text>
+<circle cx="405" cy="714.8897637795277" r="7" fill="white" stroke="#17324D" stroke-width="1.4"/>
+<line x1="412" y1="714.8897637795277" x2="440" y2="714.8897637795277" stroke="#17324D" stroke-width="1.3"/>
+<text x="451" y="718.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">Provided interface (lollipop)</text>
+<text x="705" y="718.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">Solid connection = UML assembly connector</text>
+<text x="40" y="745.8897637795277" fill="#17324D" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" text-anchor="start">Scope: the supplied Android code stores data locally using Gson and files. This diagram intentionally replaces that persistence with the remote architecture required by the assignment. No client connects directly to the database.</text>
+<text x="40" y="784.8897637795277" fill="#64748B" font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="normal" text-anchor="start">Basis: Capstone 3 User Stories (US 1-21) and the assignment server/request description. Interface names and web-client internals are modeling choices; no database vendor, server framework or wire-data format is prescribed.</text>
+</svg>
