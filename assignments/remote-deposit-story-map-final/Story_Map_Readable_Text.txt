@@ -1,0 +1,540 @@
+REMOTE DEPOSIT CAPTURE — MOBILE APP STORY MAP
+Includes all section 18 functions, explicit ERROR CONDITIONS, FINGERPRINT AUTHENTICATION and TOUCH ID AUTHENTICATION.
+LEFT TO RIGHT = chronological activities. TOP TO BOTTOM = steps, error/recovery variations, then optional enhancements.
+Phone platforms and sign-in methods are alternatives: each customer chooses the supported route rather than completing every option.
+MAJOR
+ACTIVITIES
+1. Install and prepare
+2. Sign in securely
+3. View accounts and
+choose
+4. Capture the check
+5. Enter and validate
+6. Review and submit
+7. Track deposit and
+get help
+8. Explore offers
+MAIN STEPS
+Core functionality
+Read steps in each
+column from top
+to bottom.
+S01 Download for iPhone
+S02 Download for Android
+S03 Download for
+Windows Phone
+S04 Check
+remote-capture readiness
+S05 Use portal credentials
+S06 Use an approved
+alternative
+S07 Sign out; lock idle
+sessions
+S08 View accounts and
+balances
+S09 Select eligible deposit
+account
+S10 Prepare camera and
+check
+S11 Take check-front
+picture
+S12 Take check-back
+picture
+S13 Preview and retake
+securely
+S14 Enter check amount
+S15 Enter required check
+details
+S16 Match images against
+details
+S17 Review account,
+amount, images
+S18 Confirm and send
+e-check
+S19 Receive
+acknowledgement
+S20 Refresh status and
+balance
+S21 View bank offers
+S22 Open promotion
+details
+ERROR /
+RECOVERY
+Core functionality
+Return to the same
+step after correction.
+E01 Setup or eligibility
+problem
+E02 LOGIN FAILURE:
+retry or recover
+E03 Expired code: request
+a new one
+E04 Balance unavailable:
+show stale state
+E05 Ineligible account:
+choose another
+E06 Camera denied:
+enable or cancel
+E07 IMAGE SCANNING
+ERROR: retake
+E08 Invalid amount or
+missing fields
+E09 Image/detail
+mismatch: correct
+E10 Network timeout:
+check outcome
+E11 Duplicate/fraud alert:
+block and explain
+E12 Rejected/pending:
+show next action
+E13 Offers unavailable:
+continue banking
+ADDITIONAL
+OPTIONS
+Authentication
+and convenience
+variations included
+in this story map.
+—
+O01 FINGERPRINT
+authentication
+O02 TOUCH ID
+authentication
+O03 Remember preferred
+account
+O04 Auto-capture with
+edge guides
+O05 Suggest amount;
+always verify
+O06 Resume an
+encrypted unsent draft
+O07 View deposit history
+O08 Opt into status
+notifications
+O09 Choose personalized
+offers
+S = normal story; E = error/recovery variation; O = optional improvement. Every card has an expanded user story and source trace in this document.
+Both front AND back images, amount entry, account selection, image/detail validation, secure submission and promotions are mandatory Core scope.
+Offers are an independent branch, never a deposit prerequisite. Submission acknowledgement is not a promise that funds are cleared or immediately available.
+
+Error conditions and authentication variations
+These are explicit branches of the story map. Each branch identifies the stimulus, system response and customer recovery;
+it is part of the submitted product scope.
+Condition
+Trigger
+App response
+Recovery
+Map ID
+Login failure
+Wrong
+username/password
+Deny account access; show safe
+login error.
+Retry credentials or use the bank
+recovery route.
+E02
+Alternative
+authentication fails
+Expired or incorrect code
+Reject the code; keep the session
+unauthenticated.
+Request a new bank-verified code.
+E03
+Fingerprint
+authentication fails
+Unrecognized
+fingerprint, unavailable
+sensor or cancelled
+prompt
+Do not log in; do not reveal
+account information.
+Retry within bank policy or use
+portal credentials/verified code.
+O01
+Touch ID
+authentication fails
+Touch ID mismatch,
+lockout, unavailable
+sensor or cancellation
+Keep the app locked; display the
+permitted fallback.
+Use bank-approved
+credentials/code; no biometric
+bypass.
+O02
+Camera or
+scanning error
+Permission denied,
+blurred front/back,
+missing side or glare
+Block image validation/submission
+and identify the affected side.
+Enable camera or retake the
+required image; preserve other
+valid input.
+E06-E07
+Invalid entered
+details
+Empty/non-numeric/non-
+positive amount or
+required field missing
+Show a field-specific error and do
+not submit.
+Correct the amount/details and
+validate again.
+E08
+Image/details
+mismatch
+Image validation
+disagrees with the
+entered amount/details
+Block deposit and explain the
+mismatch.
+Correct entered data or retake the
+image, then revalidate.
+E09
+Network or
+submission error
+Connection lost before a
+receipt is received
+Show pending/unknown outcome,
+not confirmed success.
+Look up the existing request
+reference before any retry.
+E10
+Duplicate or fraud
+warning
+Bank flags duplicate/tam
+pered/ineligible check
+Do not show a successful deposit;
+present the bank result.
+Review the issue or contact bank
+support.
+E11
+Account, status or
+offer error
+Account ineligible, bank
+rejects check,
+balance/offer
+unavailable
+Explain the problem; preserve
+known status and avoid false
+balance claims.
+Choose another eligible account,
+refresh, contact support or skip
+offers.
+E04-E05,
+E12-E13
+Biometric success paths
+Fingerprint: after bank-verified sign-in and explicit opt-in, a supported phone accepts a recognized fingerprint and opens the
+authorized session. Touch ID: after the same enrollment/consent, a supported iPhone accepts Touch ID and opens the
+authorized session. Both methods retain a non-biometric fallback and follow bank session/lockout rules; the bank does not
+receive a raw fingerprint image.
+Scope check
+Required functions: downloads for iPhone, Android and Windows Phone; portal or alternative sign-in; balances; front AND
+back capture; amount/details; destination account; image-versus-details validation; secure e-check deposit; bank offers.
+Fingerprint and Touch ID are additional authentication options, not replacements for basic bank verification.
+
+Remote Deposit Capture | Mobile App Story Map
+2
+Readable story map — activities, steps and variations
+This is the same story map as the landscape first page, expanded as selectable text. The backbone is Install → Sign in →
+View/select accounts → Capture → Enter/validate → Review/submit → Track/help; offers are a separate optional customer
+activity. The Core includes the main steps AND error recovery; additional options include biometric authentication and
+convenience features.
+1. Install and prepare
+Customer outcome: Use the service on my phone.
+Main steps — Core: S01 Download for iPhone; S02 Download for Android; S03 Download for Windows Phone; S04 Check
+remote-capture readiness
+Error/recovery variations — Core: E01 Setup or eligibility problem
+Optional enhancements — Additional option: No additional story in this release.
+2. Sign in securely
+Customer outcome: Access my bank identity.
+Main steps — Core: S05 Use portal credentials; S06 Use an approved alternative; S07 Sign out; lock idle sessions
+Error/recovery variations — Core: E02 LOGIN FAILURE: retry or recover; E03 Expired code: request a new one
+Optional enhancements — Additional option: O01 FINGERPRINT authentication; O02 TOUCH ID authentication
+3. View accounts and choose
+Customer outcome: Know my balance and destination.
+Main steps — Core: S08 View accounts and balances; S09 Select eligible deposit account
+Error/recovery variations — Core: E04 Balance unavailable: show stale state; E05 Ineligible account: choose another
+Optional enhancements — Additional option: O03 Remember preferred account
+4. Capture the check
+Customer outcome: Provide readable front/back images.
+Main steps — Core: S10 Prepare camera and check; S11 Take check-front picture; S12 Take check-back picture; S13
+Preview and retake securely
+Error/recovery variations — Core: E06 Camera denied: enable or cancel; E07 IMAGE SCANNING ERROR: retake
+Optional enhancements — Additional option: O04 Auto-capture with edge guides
+
+Remote Deposit Capture | Mobile App Story Map
+3
+Readable story map — continued
+5. Enter and validate
+Customer outcome: Provide correct check information.
+Main steps — Core: S14 Enter check amount; S15 Enter required check details; S16 Match images against details
+Error/recovery variations — Core: E08 Invalid amount or missing fields; E09 Image/detail mismatch: correct
+Optional enhancements — Additional option: O05 Suggest amount; always verify
+6. Review and submit
+Customer outcome: Authorize one intended deposit.
+Main steps — Core: S17 Review account, amount, images; S18 Confirm and send e-check
+Error/recovery variations — Core: E10 Network timeout: check outcome; E11 Duplicate/fraud alert: block and explain
+Optional enhancements — Additional option: O06 Resume an encrypted unsent draft
+7. Track deposit and get help
+Customer outcome: Understand the bank outcome.
+Main steps — Core: S19 Receive acknowledgement; S20 Refresh status and balance
+Error/recovery variations — Core: E12 Rejected/pending: show next action
+Optional enhancements — Additional option: O07 View deposit history; O08 Opt into status notifications
+8. Explore offers
+Customer outcome: Discover optional bank offers.
+Main steps — Core: S21 View bank offers; S22 Open promotion details
+Error/recovery variations — Core: E13 Offers unavailable: continue banking
+Optional enhancements — Additional option: O09 Choose personalized offers
+
+Remote Deposit Capture | Mobile App Story Map
+4
+Coverage of every section 18 mobile requirement
+Requirement
+Mobile capability
+Map stories
+18(a)
+iPhone, Android, Windows Phone downloads
+S01-S03
+18(b)
+Internet-portal credentials or other authentication
+S05-S07; E02-E03; O01 fingerprint; O02 Touch ID
+18(c)
+View account balances
+S08, S20; E04
+18(d)(i)
+Secure front and back check photographs
+S10-S13; E06-E07; E11
+18(d)(ii)
+Enter amount and check details
+S14-S15; E08
+18(d)(iii)
+Select the destination deposit account
+S09, S17; E05
+18(d)(iv)
+Validate images against entered details
+S16; E09
+18(d)(v)
+Deposit the e-check into the account
+S17-S20; E10-E12
+18(e)
+Bank shares offers and promotions
+S21-S22; E13; O09
+Acceptance examples
+• A valid deposit: sign in, view balances, choose an eligible account, capture front/back, enter amount, pass image/detail
+checks, review and submit once; receive a bank reference and status.
+• A failed login: show a safe error, grant no account access, and offer retry or bank recovery. Expired alternative codes are
+rejected; biometric failures fall back to an approved method.
+• A camera/image error: a missing permission, blurred image or absent check side blocks the affected step and gives a clear
+retry/retake route.
+• A data mismatch: invalid amount or image-versus-entered-detail mismatch blocks submission until the customer corrects
+it.
+• A submission timeout: check the existing request status before resending; an unknown result is not displayed as a
+successful cleared deposit.
+• Banking without promotions: an unavailable offer never prevents viewing a balance or submitting a check.
+Explicit assumptions and scope
+The bank provides existing identity, remote-capture enrollment/eligibility, balances, check-validation and
+deposit-processing/status services. Alternative authentication may use a bank-approved verified code; fingerprint and Touch
+ID are optional, supported-device conveniences following bank authentication, with a non-biometric fallback.
+Check images use protected temporary storage/transport and bank-side duplicate/tamper checks; “fraud-proof” in the vision
+is treated as a fraud-resistance requirement rather than an absolute guarantee. Bank acknowledgement, clearing and funds
+availability are distinct; the app displays bank-provided statuses and balances.
+All three platforms in the fictional case remain explicit, including Windows Phone; real-world platform/store feasibility must
+be agreed before implementation. Desktop scanners, browser plug-ins, scanner purchases, portal account administration
+and bank-side clearing are outside this mobile map. Help links may use the existing bank support service; building that
+service is not mobile scope.
+Source: supplied Case Study: Remote Deposit Capture, especially section 18(a-e), and the SampleStoryMap example.
+Optional improvements and detailed error behavior are reasonable product assumptions allowed by the assignment, not
+claims of implemented software.
+
+Remote Deposit Capture | Mobile App Story Map
+5
+Expanded customer stories
+These stories provide the user need and benefit for every card on the map. Normal steps and error handling are Core
+scope; additional options remain explicitly part of this story map.
+Story / priority
+Customer need and benefit
+S01 / Core
+As a customer, I want to install the iPhone app so that I can deposit from my iPhone.
+Trace: 18(a)
+S02 / Core
+As a customer, I want to install the Android app so that I can deposit from my Android phone.
+Trace: 18(a)
+S03 / Core
+As a customer, I want to install the Windows Phone app specified by the case so that the third required platform is
+included.
+Trace: 18(a)
+S04 / Core
+As a customer, I want to check whether my existing bank account is eligible for remote capture so that I know how to
+prepare before depositing.
+Trace: 3-4; assumption
+S05 / Core
+As a customer, I want to sign in using my internet portal account so that I can access my existing bank identity.
+Trace: 18(b)
+S06 / Core
+As a customer, I want to use a bank-approved alternative such as a verified one-time code so that I have another
+supported authentication route.
+Trace: 18(b); assumption
+S07 / Core
+As a customer, I want to sign out and have idle access locked so that my account is protected on a shared or
+unattended phone.
+Trace: 5,15; assumption
+S08 / Core
+As a customer, I want to view bank-provided account balances with a refresh indicator so that I can understand my
+current funds.
+Trace: 18(c)
+S09 / Core
+As a customer, I want to choose an eligible destination account so that the deposit goes to the account I intend.
+Trace: 18(d)(iii)
+S10 / Core
+As a customer, I want to see camera and endorsement guidance so that I can prepare the check correctly.
+Trace: 18(d)(i); assumption
+S11 / Core
+As a customer, I want to capture a clear check-front image so that the bank can read the front details.
+Trace: 18(d)(i)
+S12 / Core
+As a customer, I want to capture a clear check-back image so that both required check sides are submitted.
+Trace: 18(d)(i)
+S13 / Core
+As a customer, I want to preview, retake and protect temporary check images so that unreadable or exposed photos
+are avoided.
+Trace: 18(d)(i)
+S14 / Core
+As a customer, I want to enter the check amount so that the bank receives my intended deposit value.
+Trace: 18(d)(ii)
+S15 / Core
+As a customer, I want to complete other bank-required check fields so that my deposit information is complete.
+Trace: 18(d)(ii); assumption
+S16 / Core
+As a customer, I want to validate captured images against the entered amount and details so that inconsistent check
+data is corrected before submission.
+Trace: 18(d)(iv)
+S17 / Core
+As a customer, I want to review the complete deposit summary so that I can correct mistakes before authorizing it.
+Trace: 18(d)(ii-v)
+S18 / Core
+As a customer, I want to authorize a secure submission to my selected bank account so that the bank can receive and
+process my e-check.
+Trace: 18(d)(v)
+S19 / Core
+As a customer, I want to receive a bank reference and receipt so that I have evidence that my request was received.
+Trace: 18(d)(v); assumption
+
+Remote Deposit Capture | Mobile App Story Map
+6
+Story / priority
+Customer need and benefit
+S20 / Core
+As a customer, I want to view the bank-reported outcome and updated balance so that I can distinguish pending
+processing from funds available.
+Trace: 18(c,d)(v); assumption
+S21 / Core
+As a customer, I want to view current bank offers in the app so that I can discover new banking opportunities.
+Trace: 18(e)
+S22 / Core
+As a customer, I want to read offer conditions and the next action so that I can decide whether an offer is useful.
+Trace: 18(e)
+E01 / Core
+As a customer, I want to see supported-device/setup guidance when installation or eligibility fails so that I can resolve
+the issue or contact the bank.
+Trace: assumption
+E02 / Core
+As a customer, I want to see a safe login error and a bank recovery route after incorrect credentials so that I can
+recover without entering an unauthorized account.
+Trace: 18(b); error variation
+E03 / Core
+As a customer, I want to retry a failed or expired alternative identity check so that an expired code does not grant
+access.
+Trace: 18(b); error variation
+E04 / Core
+As a customer, I want to see when balances cannot be refreshed so that I do not mistake stale information for current
+funds.
+Trace: 18(c); error variation
+E05 / Core
+As a customer, I want to see why an account cannot receive the check and select another eligible account so that I
+can correct the destination before sending.
+Trace: 18(d)(iii); error variation
+E06 / Core
+As a customer, I want to get permission guidance when the camera is unavailable so that I can enable it or cancel
+safely.
+Trace: 18(d)(i); error variation
+E07 / Core
+As a customer, I want to be told which check image is missing or unreadable so that I can retake that side before
+continuing.
+Trace: 18(d)(i); error variation
+E08 / Core
+As a customer, I want to correct empty, nonnumeric or invalid deposit details so that invalid values are not sent as a
+valid deposit.
+Trace: 18(d)(ii); error variation
+E09 / Core
+As a customer, I want to correct details or retake an image when validation detects a mismatch so that the bank
+receives consistent information.
+Trace: 18(d)(iv); error variation
+E10 / Core
+As a customer, I want to look up the same request before retrying an interrupted submission so that I do not
+accidentally submit a duplicate check.
+Trace: 18(d)(v); error variation
+E11 / Core
+As a customer, I want to receive the bank validation result for suspected duplicates or tampering so that a risky check
+is not presented as a successful deposit.
+Trace: 18(d)(i,iv,v); error variation
+E12 / Core
+As a customer, I want to see the bank reason, pending status or rejection and reach support so that I understand the
+result without assuming that funds have cleared.
+Trace: 18(d)(v),7; error variation
+E13 / Core
+As a customer, I want to skip unavailable promotions so that checking balances or depositing is never blocked by
+offers.
+Trace: 18(e); error variation
+O01 / Additional
+option
+As a customer, I want to opt into supported fingerprint authentication after bank verification so that I can re-enter
+conveniently and fall back to a bank-approved method.
+Trace: rubric enhancement; assumption
+O02 / Additional
+option
+As a customer, I want to opt into Touch ID on a supported iPhone after bank verification so that I can use biometric
+convenience without losing a recovery route.
+Trace: rubric enhancement; assumption
+
+Remote Deposit Capture | Mobile App Story Map
+7
+Story / priority
+Customer need and benefit
+O03 / Additional
+option
+As a customer, I want to remember a preferred account while confirming it each time so that repeat deposits take
+fewer steps.
+Trace: optional assumption
+O04 / Additional
+option
+As a customer, I want to use framing guides and optional automatic image capture so that I can take clear pictures
+more easily.
+Trace: optional assumption
+O05 / Additional
+option
+As a customer, I want to review a suggested amount before accepting it so that typing is reduced without removing
+image/detail validation.
+Trace: optional assumption
+O06 / Additional
+option
+As a customer, I want to resume a protected unsent draft after signing in again so that I can continue interrupted
+preparation without duplicating a submitted check.
+Trace: optional assumption
+O07 / Additional
+option
+As a customer, I want to review earlier deposit references and outcomes so that I can find a previous deposit without
+resubmitting it.
+Trace: optional assumption
+O08 / Additional
+option
+As a customer, I want to receive optional deposit-status notifications so that I do not have to repeatedly refresh the
+app.
+Trace: optional assumption
+O09 / Additional
+option
+As a customer, I want to opt into personalization and dismiss unwanted offers so that promotions remain relevant and
+under my control.
+Trace: optional assumption
