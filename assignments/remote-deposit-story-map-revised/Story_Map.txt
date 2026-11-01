@@ -1,0 +1,132 @@
+REMOTE DEPOSIT CAPTURE — MOBILE APP STORY MAP
+
+Left to right: chronological activities. Top to bottom: main steps, error/recovery variations, optional enhancements. Main steps and error recovery are MVP; enhancements are Release 2.
+
+1. Install and prepare
+MAIN:
+S01 Download for iPhone
+As a customer, I want to install the iPhone app so that I can deposit from my iPhone.
+S02 Download for Android
+As a customer, I want to install the Android app so that I can deposit from my Android phone.
+S03 Download for Windows Phone
+As a customer, I want to install the Windows Phone app specified by the case so that the third required platform is included.
+S04 Check remote-capture readiness
+As a customer, I want to check whether my existing bank account is eligible for remote capture so that I know how to prepare before depositing.
+ERROR:
+E01 Setup or eligibility problem
+As a customer, I want to see supported-device/setup guidance when installation or eligibility fails so that I can resolve the issue or contact the bank.
+OPTIONAL:
+
+
+2. Sign in securely
+MAIN:
+S05 Use portal credentials
+As a customer, I want to sign in using my internet portal account so that I can access my existing bank identity.
+S06 Use an approved alternative
+As a customer, I want to use a bank-approved alternative such as a verified one-time code so that I have another supported authentication route.
+S07 Sign out; lock idle sessions
+As a customer, I want to sign out and have idle access locked so that my account is protected on a shared or unattended phone.
+ERROR:
+E02 Wrong credentials: retry/recover
+As a customer, I want to see a safe login error and a bank recovery route after incorrect credentials so that I can recover without entering an unauthorized account.
+E03 Expired code: request a new one
+As a customer, I want to retry a failed or expired alternative identity check so that an expired code does not grant access.
+OPTIONAL:
+O01 Fingerprint sign-in with fallback
+As a customer, I want to opt into supported fingerprint authentication after bank verification so that I can re-enter conveniently and fall back to a bank-approved method.
+O02 Touch ID sign-in with fallback
+As a customer, I want to opt into Touch ID on a supported iPhone after bank verification so that I can use biometric convenience without losing a recovery route.
+
+3. View accounts and choose
+MAIN:
+S08 View accounts and balances
+As a customer, I want to view bank-provided account balances with a refresh indicator so that I can understand my current funds.
+S09 Select eligible deposit account
+As a customer, I want to choose an eligible destination account so that the deposit goes to the account I intend.
+ERROR:
+E04 Balance unavailable: show stale state
+As a customer, I want to see when balances cannot be refreshed so that I do not mistake stale information for current funds.
+E05 Ineligible account: choose another
+As a customer, I want to see why an account cannot receive the check and select another eligible account so that I can correct the destination before sending.
+OPTIONAL:
+O03 Remember preferred account
+As a customer, I want to remember a preferred account while confirming it each time so that repeat deposits take fewer steps.
+
+4. Capture the check
+MAIN:
+S10 Prepare camera and check
+As a customer, I want to see camera and endorsement guidance so that I can prepare the check correctly.
+S11 Take check-front picture
+As a customer, I want to capture a clear check-front image so that the bank can read the front details.
+S12 Take check-back picture
+As a customer, I want to capture a clear check-back image so that both required check sides are submitted.
+S13 Preview and retake securely
+As a customer, I want to preview, retake and protect temporary check images so that unreadable or exposed photos are avoided.
+ERROR:
+E06 Camera denied: enable or cancel
+As a customer, I want to get permission guidance when the camera is unavailable so that I can enable it or cancel safely.
+E07 Blurred or missing side: retake
+As a customer, I want to be told which check image is missing or unreadable so that I can retake that side before continuing.
+OPTIONAL:
+O04 Auto-capture with edge guides
+As a customer, I want to use framing guides and optional automatic image capture so that I can take clear pictures more easily.
+
+5. Enter and validate
+MAIN:
+S14 Enter check amount
+As a customer, I want to enter the check amount so that the bank receives my intended deposit value.
+S15 Enter required check details
+As a customer, I want to complete other bank-required check fields so that my deposit information is complete.
+S16 Match images against details
+As a customer, I want to validate captured images against the entered amount and details so that inconsistent check data is corrected before submission.
+ERROR:
+E08 Invalid amount or missing fields
+As a customer, I want to correct empty, nonnumeric or invalid deposit details so that invalid values are not sent as a valid deposit.
+E09 Image/detail mismatch: correct
+As a customer, I want to correct details or retake an image when validation detects a mismatch so that the bank receives consistent information.
+OPTIONAL:
+O05 Suggest amount; always verify
+As a customer, I want to review a suggested amount before accepting it so that typing is reduced without removing image/detail validation.
+
+6. Review and submit
+MAIN:
+S17 Review account, amount, images
+As a customer, I want to review the complete deposit summary so that I can correct mistakes before authorizing it.
+S18 Confirm and send e-check
+As a customer, I want to authorize a secure submission to my selected bank account so that the bank can receive and process my e-check.
+ERROR:
+E10 Network timeout: check outcome
+As a customer, I want to look up the same request before retrying an interrupted submission so that I do not accidentally submit a duplicate check.
+E11 Duplicate/fraud alert: block and explain
+As a customer, I want to receive the bank validation result for suspected duplicates or tampering so that a risky check is not presented as a successful deposit.
+OPTIONAL:
+O06 Resume an encrypted unsent draft
+As a customer, I want to resume a protected unsent draft after signing in again so that I can continue interrupted preparation without duplicating a submitted check.
+
+7. Track deposit and get help
+MAIN:
+S19 Receive acknowledgement
+As a customer, I want to receive a bank reference and receipt so that I have evidence that my request was received.
+S20 Refresh status and balance
+As a customer, I want to view the bank-reported outcome and updated balance so that I can distinguish pending processing from funds available.
+ERROR:
+E12 Rejected/pending: show next action
+As a customer, I want to see the bank reason, pending status or rejection and reach support so that I understand the result without assuming that funds have cleared.
+OPTIONAL:
+O07 View deposit history
+As a customer, I want to review earlier deposit references and outcomes so that I can find a previous deposit without resubmitting it.
+O08 Opt into status notifications
+As a customer, I want to receive optional deposit-status notifications so that I do not have to repeatedly refresh the app.
+
+8. Explore offers
+MAIN:
+S21 View bank offers
+As a customer, I want to view current bank offers in the app so that I can discover new banking opportunities.
+S22 Open promotion details
+As a customer, I want to read offer conditions and the next action so that I can decide whether an offer is useful.
+ERROR:
+E13 Offers unavailable: continue banking
+As a customer, I want to skip unavailable promotions so that checking balances or depositing is never blocked by offers.
+OPTIONAL:
+O09 Choose personalized offers
+As a customer, I want to opt into personalization and dismiss unwanted offers so that promotions remain relevant and under my control.
