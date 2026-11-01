@@ -1,0 +1,274 @@
+[
+  {
+    "id": "M01",
+    "col": 0,
+    "release": "R1",
+    "title": "Install on iPhone",
+    "story": "As a Blue Bank customer, I want to download and install the iPhone app so that I can deposit checks from my iPhone.",
+    "source": "18(a)"
+  },
+  {
+    "id": "M02",
+    "col": 0,
+    "release": "R1",
+    "title": "Install on Android",
+    "story": "As a Blue Bank customer, I want to download and install the Android app so that I can deposit checks from my Android phone.",
+    "source": "18(a)"
+  },
+  {
+    "id": "M03",
+    "col": 0,
+    "release": "R1",
+    "title": "Install on Windows Phone",
+    "story": "As a Blue Bank customer, I want to download and install the Windows Phone app so that I can use the platform explicitly included in the case study.",
+    "source": "18(a)"
+  },
+  {
+    "id": "M04",
+    "col": 0,
+    "release": "R1",
+    "title": "Check RDC readiness",
+    "story": "As a Blue Bank customer, I want to see account eligibility and setup guidance so that I know whether my existing remote capture account is ready.",
+    "source": "3-4; A1"
+  },
+  {
+    "id": "M05",
+    "col": 1,
+    "release": "R1",
+    "title": "Use portal credentials",
+    "story": "As a Blue Bank customer, I want to sign in with my existing internet portal account so that I can use my established bank identity.",
+    "source": "18(b)"
+  },
+  {
+    "id": "M06",
+    "col": 1,
+    "release": "R1",
+    "title": "Use bank-approved alternative",
+    "story": "As a Blue Bank customer, I want to use a bank-approved alternative identity check so that I can authenticate through another supported route.",
+    "source": "18(b); A2"
+  },
+  {
+    "id": "M07",
+    "col": 1,
+    "release": "R1",
+    "title": "End or lock my session",
+    "story": "As a Blue Bank customer, I want to sign out and have an inactive session locked so that other people cannot view my banking information on the phone.",
+    "source": "5,11,15; A3"
+  },
+  {
+    "id": "M08",
+    "col": 1,
+    "release": "R2",
+    "title": "Enable biometric re-entry",
+    "story": "As a Blue Bank customer, I want to opt into supported biometric re-entry after bank authentication so that I can return conveniently without weakening the bank session policy.",
+    "source": "A2; optional"
+  },
+  {
+    "id": "M09",
+    "col": 2,
+    "release": "R1",
+    "title": "See my accounts",
+    "story": "As a Blue Bank customer, I want to view accounts associated with my bank identity so that I can identify the right account before depositing.",
+    "source": "18(c); A1"
+  },
+  {
+    "id": "M10",
+    "col": 2,
+    "release": "R1",
+    "title": "View and refresh balances",
+    "story": "As a Blue Bank customer, I want to see bank-provided balances and their refresh time so that I can distinguish current information from stale information.",
+    "source": "18(c); A4"
+  },
+  {
+    "id": "M11",
+    "col": 2,
+    "release": "R1",
+    "title": "Choose eligible destination",
+    "story": "As a Blue Bank customer, I want to select an eligible deposit account so that my check goes to the account I intend.",
+    "source": "18(d)(iii)"
+  },
+  {
+    "id": "M12",
+    "col": 2,
+    "release": "R2",
+    "title": "Remember a preferred account",
+    "story": "As a Blue Bank customer, I want to choose a preferred deposit account while confirming it each time so that repeat deposits require fewer selections.",
+    "source": "A4; optional"
+  },
+  {
+    "id": "M13",
+    "col": 3,
+    "release": "R1",
+    "title": "Prepare camera and check",
+    "story": "As a Blue Bank customer, I want to receive camera-permission and endorsement guidance so that I can prepare a usable check image.",
+    "source": "18(d)(i); A5"
+  },
+  {
+    "id": "M14",
+    "col": 3,
+    "release": "R1",
+    "title": "Capture check front",
+    "story": "As a Blue Bank customer, I want to capture a clear front image within the app so that the bank can read and validate the check face.",
+    "source": "18(d)(i)"
+  },
+  {
+    "id": "M15",
+    "col": 3,
+    "release": "R1",
+    "title": "Capture check back",
+    "story": "As a Blue Bank customer, I want to capture a clear back image within the app so that the bank receives both required sides.",
+    "source": "18(d)(i)"
+  },
+  {
+    "id": "M16",
+    "col": 3,
+    "release": "R1",
+    "title": "Check quality; retake securely",
+    "story": "As a Blue Bank customer, I want to preview and retake unreadable images and protect temporary copies so that I submit usable images without exposing them in my public photo gallery.",
+    "source": "18(d)(i),5; A3,A5"
+  },
+  {
+    "id": "M17",
+    "col": 3,
+    "release": "R2",
+    "title": "Use assisted camera capture",
+    "story": "As a Blue Bank customer, I want to use edge detection and optional automatic capture so that I can take clearer images with less effort.",
+    "source": "A5; optional"
+  },
+  {
+    "id": "M18",
+    "col": 4,
+    "release": "R1",
+    "title": "Enter check amount",
+    "story": "As a Blue Bank customer, I want to enter the check amount explicitly so that the bank receives my intended deposit value.",
+    "source": "18(d)(ii)"
+  },
+  {
+    "id": "M19",
+    "col": 4,
+    "release": "R1",
+    "title": "Complete required check details",
+    "story": "As a Blue Bank customer, I want to enter any additional check details required by bank policy so that my submission is complete before validation.",
+    "source": "18(d)(ii); A5"
+  },
+  {
+    "id": "M20",
+    "col": 4,
+    "release": "R1",
+    "title": "Match images to entered details",
+    "story": "As a Blue Bank customer, I want to validate both images against my entered details and correct mismatches so that I do not submit an inconsistent amount or unreadable check.",
+    "source": "18(d)(iv)"
+  },
+  {
+    "id": "M21",
+    "col": 4,
+    "release": "R2",
+    "title": "Review suggested amount",
+    "story": "As a Blue Bank customer, I want to review a suggested amount extracted from the image before accepting it so that I can reduce typing while retaining control of the declared amount.",
+    "source": "A5; optional"
+  },
+  {
+    "id": "M22",
+    "col": 5,
+    "release": "R1",
+    "title": "Review deposit summary",
+    "story": "As a Blue Bank customer, I want to review the account, amount, images and bank-provided terms so that I can correct errors before authorizing submission.",
+    "source": "18(d)(ii-v); A5"
+  },
+  {
+    "id": "M23",
+    "col": 5,
+    "release": "R1",
+    "title": "Confirm and submit e-check",
+    "story": "As a Blue Bank customer, I want to authorize one secure submission of the validated e-check so that the bank can receive and process my deposit.",
+    "source": "18(d)(v)"
+  },
+  {
+    "id": "M24",
+    "col": 5,
+    "release": "R1",
+    "title": "Resolve interrupted submission",
+    "story": "As a Blue Bank customer, I want to check the outcome of an interrupted request before retrying so that I avoid accidentally submitting the same deposit twice.",
+    "source": "5,11; A3"
+  },
+  {
+    "id": "M25",
+    "col": 5,
+    "release": "R1",
+    "title": "Handle duplicate or fraud alerts",
+    "story": "As a Blue Bank customer, I want to receive a clear bank validation result and next action so that a suspected duplicate or invalid check is not treated as a successful deposit.",
+    "source": "18(d)(i,iv-v); A3,A5"
+  },
+  {
+    "id": "M26",
+    "col": 6,
+    "release": "R1",
+    "title": "Receive deposit acknowledgement",
+    "story": "As a Blue Bank customer, I want to receive a deposit reference and bank-reported status so that I have evidence that the bank received my request.",
+    "source": "18(d)(v); A4"
+  },
+  {
+    "id": "M27",
+    "col": 6,
+    "release": "R1",
+    "title": "Check outcome and balance",
+    "story": "As a Blue Bank customer, I want to refresh the bank-reported deposit outcome and account balance so that I can tell pending processing from funds made available.",
+    "source": "18(c,d)(v); A4"
+  },
+  {
+    "id": "M28",
+    "col": 6,
+    "release": "R1",
+    "title": "Get help when needed",
+    "story": "As a Blue Bank customer, I want to open bank instructions or contact the existing support service so that I can recover from setup or deposit problems.",
+    "source": "7; A6"
+  },
+  {
+    "id": "M29",
+    "col": 6,
+    "release": "R2",
+    "title": "View deposit history",
+    "story": "As a Blue Bank customer, I want to review prior deposit references and outcomes so that I can find a previous transaction without submitting it again.",
+    "source": "A4; optional"
+  },
+  {
+    "id": "M30",
+    "col": 6,
+    "release": "R2",
+    "title": "Opt into status notifications",
+    "story": "As a Blue Bank customer, I want to opt into notifications about deposit status changes so that I can learn of a bank decision without repeatedly opening the app.",
+    "source": "A4; optional"
+  },
+  {
+    "id": "M31",
+    "col": 7,
+    "release": "R1",
+    "title": "See bank offers",
+    "story": "As a Blue Bank customer, I want to view current bank offers in the app so that I can discover relevant banking opportunities.",
+    "source": "18(e)"
+  },
+  {
+    "id": "M32",
+    "col": 7,
+    "release": "R1",
+    "title": "Open offer details",
+    "story": "As a Blue Bank customer, I want to open offer conditions and the bank-approved next action so that I can decide whether to respond without interrupting a deposit.",
+    "source": "18(e); A6"
+  },
+  {
+    "id": "M33",
+    "col": 7,
+    "release": "R2",
+    "title": "Dismiss offers and set preferences",
+    "story": "As a Blue Bank customer, I want to dismiss an offer or manage optional promotion settings so that I can keep the app focused on my banking task.",
+    "source": "A6; optional"
+  },
+  {
+    "id": "M34",
+    "col": 7,
+    "release": "R3",
+    "title": "Choose personalized offers",
+    "story": "As a Blue Bank customer, I want to opt into personalized offers with clear preferences so that I receive more relevant offers if I choose.",
+    "source": "A6; optional"
+  }
+]
