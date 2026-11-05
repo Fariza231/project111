@@ -1,0 +1,15 @@
+UWON LIBRARY SYSTEM — MODEL NOTES
+
+Three representative patron scenarios are modeled; this is not a complete design of every university workflow. Registration is a precondition, and supplier comparison/order submission is a separate staff acquisition workflow outside these three selected scenarios.
+
+Logical stores D1-D7 are grouped views of a common persistent library database, not necessarily separate physical databases. Cross-store issue/reservation updates are therefore modeled as atomic transactions. Session authentication and category-based facility permissions are checked on every restricted operation; credential/session protocol details and policy administration are outside the displayed ER projections.
+
+Reservation allocation: Waiting has no allocated copy; Ready has a matching eligible copy marked Reserved; issue changes Ready to Fulfilled and the copy to OnLoan. No more than one active allocation or active loan can occupy a copy. Physical Binding, Missing or Damaged copies are unavailable. A mismatch at the shelf triggers refusal and inventory correction, not a successful loan.
+
+Loan policy: PATRON.policy_id is shown in S2 where its constraints are relevant. Other scenario ER views display relevant projections of the same entity, not conflicting table definitions. Loan history is retained; condition history supports review without proving responsibility for damage.
+
+Digital access: a granted attempt uses exactly one applicable active entitlement source (Subscription or Agreement); rights must cover the route/provider, resource, category and validity interval. Provider acceptance is additionally required. Audit keeps outcome/references, not reusable access tokens.
+
+Multiplicity labels show the number of entities at their adjacent end for one entity at the opposite end. DFD external entity roles are not identical to stored ER records; a store may contain several entities. DFD flows are data movement, not a sequence chart.
+
+No personal author name or submission date is included. No running implementation or tests of a live library service are claimed.

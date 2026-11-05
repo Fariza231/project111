@@ -1,0 +1,37 @@
+digraph DFD { graph [rankdir=TB, nodesep=0.65, ranksep=1.0, splines=spline, pad=0.4, bgcolor="white"]; node [fontname="Helvetica",fontsize=11]; edge [fontname="Helvetica",fontsize=11,arrowsize=0.65];
+Patron [shape=box,label="Library Patron",style=solid];
+Staff [shape=box,label="Authorized Library Staff",style=solid];
+subgraph cluster_UWON { label="UWON Library System — logical data-flow boundary"; color="#A8BCCC"; fontname="Helvetica"; fontsize=12;
+p21 [shape=box,style="rounded,filled",fillcolor="#EDF3F8",label="2.1 Validate checkout"];
+p22 [shape=box,style="rounded,filled",fillcolor="#EDF3F8",label="2.2 Issue loan"];
+p23 [shape=box,style="rounded,filled",fillcolor="#EDF3F8",label="2.3 Record return"];
+p24 [shape=box,style="rounded,filled",fillcolor="#EDF3F8",label="2.4 Trace loan history"];
+D1 [shape=plain,label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BORDER="1">D1</TD><TD BORDER="1" SIDES="TB">Patrons + Loan policies</TD></TR></TABLE>>];
+D3 [shape=plain,label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BORDER="1">D3</TD><TD BORDER="1" SIDES="TB">Copies + Departments</TD></TR></TABLE>>];
+D4 [shape=plain,label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BORDER="1">D4</TD><TD BORDER="1" SIDES="TB">Reservations</TD></TR></TABLE>>];
+D5 [shape=plain,label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BORDER="1">D5</TD><TD BORDER="1" SIDES="TB">Loans</TD></TR></TABLE>>];
+}
+Patron -> p21 [label="F01"];
+Staff -> p21 [label="F02"];
+D1 -> p21 [label="F03"];
+D3 -> p21 [label="F04"];
+D4 -> p21 [label="F05"];
+D5 -> p21 [label="F06"];
+p21 -> Patron [label="F07"];
+p21 -> p22 [label="F08"];
+p22 -> D5 [label="F09"];
+p22 -> D3 [label="F10"];
+p22 -> D4 [label="F11"];
+p22 -> Patron [label="F12"];
+Patron -> p23 [label="F13"];
+Staff -> p23 [label="F14"];
+D1 -> p23 [label="F15"];
+D5 -> p23 [label="F16"];
+p23 -> D5 [label="F17"];
+p23 -> D3 [label="F18"];
+p23 -> Patron [label="F19"];
+Staff -> p24 [label="F20"];
+D1 -> p24 [label="F21"];
+D5 -> p24 [label="F22"];
+p24 -> Staff [label="F23"];
+}

@@ -1,0 +1,27 @@
+digraph DFD { graph [rankdir=TB, nodesep=0.65, ranksep=1.0, splines=spline, pad=0.4, bgcolor="white"]; node [fontname="Helvetica",fontsize=11]; edge [fontname="Helvetica",fontsize=11,arrowsize=0.65];
+Patron [shape=box,label="Library Patron",style=solid];
+Provider [shape=box,label="Digital Provider / Partner University",style=solid];
+subgraph cluster_UWON { label="UWON Library System — logical data-flow boundary"; color="#A8BCCC"; fontname="Helvetica"; fontsize=12;
+p31 [shape=box,style="rounded,filled",fillcolor="#EDF3F8",label="3.1 Authorize patron"];
+p32 [shape=box,style="rounded,filled",fillcolor="#EDF3F8",label="3.2 Evaluate entitlement"];
+p33 [shape=box,style="rounded,filled",fillcolor="#EDF3F8",label="3.3 Obtain provider grant"];
+p34 [shape=box,style="rounded,filled",fillcolor="#EDF3F8",label="3.4 Record access outcome"];
+D1 [shape=plain,label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BORDER="1">D1</TD><TD BORDER="1" SIDES="TB">Patrons</TD></TR></TABLE>>];
+D2 [shape=plain,label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BORDER="1">D2</TD><TD BORDER="1" SIDES="TB">Resources</TD></TR></TABLE>>];
+D6 [shape=plain,label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BORDER="1">D6</TD><TD BORDER="1" SIDES="TB">Providers + Routes + Rights</TD></TR></TABLE>>];
+D7 [shape=plain,label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BORDER="1">D7</TD><TD BORDER="1" SIDES="TB">Access attempts</TD></TR></TABLE>>];
+}
+Patron -> p31 [label="F01"];
+D1 -> p31 [label="F02"];
+p31 -> Patron [label="F03"];
+p31 -> p32 [label="F04"];
+D2 -> p32 [label="F05"];
+D6 -> p32 [label="F06"];
+p32 -> p33 [label="F07"];
+p32 -> p34 [label="F08"];
+p33 -> Provider [label="F09"];
+Provider -> p33 [label="F10"];
+p33 -> p34 [label="F11"];
+p34 -> D7 [label="F12"];
+p34 -> Patron [label="F13"];
+}
