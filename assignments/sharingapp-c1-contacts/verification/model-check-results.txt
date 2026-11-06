@@ -1,0 +1,21 @@
+PASS new contacts have distinct UUIDs
+PASS editing preserves identity
+PASS getters and setters
+PASS updateId preserves supplied identifier
+PASS new list is empty
+PASS add and indexed lookup
+PASS username uniqueness query
+PASS username lookup and absent contact
+PASS borrower spinner username order
+PASS identity-based matching of separately loaded borrowers
+PASS missing identity lookup
+PASS active borrower collection does not replace main contacts
+PASS JSON save and reload preserve identities and records
+PASS email edit survives reopening
+PASS identity-based delete survives reopening
+PASS deleting absent contact leaves others intact
+PASS UTF-8 contact persistence
+PASS first-run missing file loads empty list
+PASS JSON null does not create null collection
+PASS malformed JSON does not crash loading
+RESULT: 20 checks passed; filesystem Context test double; no Android UI execution.

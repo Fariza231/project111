@@ -1,0 +1,9 @@
+VERIFICATION SUMMARY
+
+Android app and test APKs: assembleDebug and assembleDebugAndroidTest BUILD SUCCESSFUL.
+Contact model / filesystem persistence: 20 checks passed.
+Actual Android 10/API 29 on-device walkthrough: OK (1 test), 139.316 seconds.
+Verified UI: Main -> Contacts -> add alice/bob/charlie -> update alice email -> delete charlie -> Available inventory -> add Camera -> set Borrowed -> default alice -> select bob -> Save -> reopen and confirm bob.
+Video: real Android screen recording, normal speed, approximately 2 minutes 28 seconds; captured from the real emulator while the instrumentation test operated the application UI.
+ZIP submission contains exactly Contact.java and ContactList.java in one folder.
+Full project excludes local SDK paths, build outputs, IDE configuration and caches.

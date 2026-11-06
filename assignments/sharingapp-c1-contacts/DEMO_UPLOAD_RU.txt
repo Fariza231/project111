@@ -1,0 +1,13 @@
+Project Title: SharingApp — Contacts and Borrower Selection
+
+Part 1: загрузите Contact_Submission.zip. Внутри папка с Contact.java и ContactList.java.
+
+Part 2: загрузите файл видеодемонстрации на YouTube с доступом «По ссылке» или Internet Archive. Скопируйте ссылку на опубликованное видео в поле URL на Coursera. Проверьте, что видео открывается без входа в ваш аккаунт.
+
+Title: SharingApp Contacts Feature Demo
+Caption: Demonstration of contact creation, email editing, contact deletion, and borrower selection in the Android app.
+
+Не вставляйте email в поле URL. GitHub используется для скачивания файлов; по условиям задания ссылка на видео должна вести на YouTube или Internet Archive.
+
+SharingApp_Contacts.apk — устанавливаемая debug-сборка приложения для проверки на Android.
+SharingApp_Contacts_Project.zip — полный проект для Android Studio; распакуйте и откройте папку SharingApp.
