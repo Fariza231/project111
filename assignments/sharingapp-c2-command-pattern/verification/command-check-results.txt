@@ -1,0 +1,26 @@
+PASS add starts unexecuted
+PASS add construction has no receiver effects
+PASS add marks normal completion
+PASS add delegates mutation then persistence exactly once
+PASS add uses supplied receiver and contact
+PASS added contact survives JSON reload
+PASS edit starts unexecuted
+PASS edit construction leaves original intact
+PASS edit marks normal completion
+PASS edit delegates delete, add and one save in order
+PASS edit replaces original without adding a second record
+PASS edited contact retains its identifier
+PASS email edit survives JSON reload
+PASS delete starts unexecuted
+PASS delete construction has no receiver effects
+PASS delete marks normal completion
+PASS delete delegates removal then one save
+PASS delete preserves unrelated contacts
+PASS deletion survives JSON reload
+PASS command 0 propagates receiver runtime failure
+PASS command 0 clears stale success before failed execution
+PASS command 1 propagates receiver runtime failure
+PASS command 1 clears stale success before failed execution
+PASS command 2 propagates receiver runtime failure
+PASS command 2 clears stale success before failed execution
+RESULT: 25 checks passed. Real starter ContactList; filesystem Context test double; no Android UI execution.
