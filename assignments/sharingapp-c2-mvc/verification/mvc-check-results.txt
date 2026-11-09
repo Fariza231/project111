@@ -1,0 +1,54 @@
+PASS contact UUID generated
+PASS contact ID reuse
+PASS one model notification with duplicate subscription suppressed
+PASS unchanged value does not trigger render loop
+PASS coherent username/email update sends one notification
+PASS detached view is not notified
+PASS observer can detach during callback
+PASS collection add notifies list view
+PASS child property change notifies collection observers
+PASS collection getter prevents unobserved list mutation
+PASS separate model instances do not reset contact directory
+PASS delete matches stable identity rather than reference
+PASS removed child no longer notifies former collection
+PASS collection view unsubscribe works
+PASS form controller normalizes validated input
+PASS blank username rejected in controller
+PASS blank email rejected in controller
+PASS invalid email rejected in controller
+PASS invalid input leaves model untouched
+PASS first-run empty persistence loads safely
+PASS controller executes add command and persists
+PASS added contact survives JSON reload
+PASS duplicate username rejected before command
+PASS rejected duplicate does not mutate directory
+PASS editing working copy does not change committed model before Save
+PASS edit controller executes replace command
+PASS edit retains ID without duplicate record
+PASS edited email persisted
+PASS second contact saved
+PASS rename to existing username rejected
+PASS rejected edit retains original
+PASS JSON excludes observer/controller references
+PASS deserialized contacts reconnect to list observer propagation
+PASS save failure reported by add controller
+PASS failed add rolls back memory
+PASS save failure reported by edit controller
+PASS failed edit restores prior contact
+PASS failed delete restores removed contact
+PASS failed writes preserve committed file
+PASS item controller saves initial available item
+PASS available item does not block contact editing
+PASS active borrower detected across separately loaded identity
+PASS active borrower edit blocked
+PASS active borrower deletion blocked
+PASS active borrower refusals preserve directory
+PASS returned item permits contact deletion
+PASS deletion persisted without losing unrelated contact
+PASS empty contact list cannot supply borrower options
+PASS item form sends coherent observer update with borrower
+PASS item controller requires borrower for Borrowed
+PASS item controller validates required fields
+PASS item list observes child model changes
+PASS item list status filtering retained
+RESULT: 53 MVC contract checks passed; production models/controllers/commands, filesystem Context double; no Android UI execution.
