@@ -1,0 +1,4 @@
+RESULT: 167 checks passed.
+158 single-save trace comparisons + 5 repeated-save scenarios + 4 validateInput signature checks.
+Compared field reads, error targets/messages/order, controller arguments, IDs, borrower/status handling, persistence-result branches, observer removal, navigation/finish and existing exception behavior.
+Original and submitted Activity source executed on JVM with deterministic Android/widget/controller doubles; not an Android UI walkthrough.

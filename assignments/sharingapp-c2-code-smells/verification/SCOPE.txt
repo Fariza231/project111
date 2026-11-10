@@ -1,0 +1,5 @@
+Application Java scope: exactly AddItemActivity.java, EditItemActivity.java, AddContactActivity.java and EditContactActivity.java changed compared with the supplied SharingApp_2.2_Solution archive.
+
+Only form-read/validation prefixes are extracted into private boolean validateInput(), with shared save values promoted to private instance fields. The successful save-method suffixes, controller calls, IDs, image/status/borrower logic, navigation and observer calls are retained. The proposed Part 1 shared-validator and Dimensions API changes are not implemented.
+
+Optional complete-project build tooling is updated separately to Gradle 8.14.3, Android Gradle plugin 8.7.3, compile SDK 35 and an explicit existing launcher export. Target SDK remains 29. Models, controllers, commands, layouts and validation policies are unchanged.

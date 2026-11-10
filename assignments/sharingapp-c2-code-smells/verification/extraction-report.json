@@ -1,0 +1,34 @@
+[
+  {
+    "class": "AddItemActivity",
+    "save_method": "saveItem",
+    "validation_returns_false": 6,
+    "original_save_lines": 50,
+    "refactored_save_lines": 17,
+    "retained_save_suffix": "        Item item = new Item(title_str, maker_str, description_str, image, null);\n        ItemController item_controller = new ItemController(item);\n        item_controller.setDimensions(length_str, width_str, height_str);\n\n        // Add item\n        boolean success = item_list_controller.addItem(item, context);\n        if (!success) {\n            return;\n        }\n\n        // End AddItemActivity\n        Intent intent = new Intent(this, MainActivity.class);\n        startActivity(intent);\n    "
+  },
+  {
+    "class": "EditItemActivity",
+    "save_method": "saveItem",
+    "validation_returns_false": 6,
+    "original_save_lines": 65,
+    "refactored_save_lines": 26,
+    "retained_save_suffix": "        String id = item_controller.getId(); // Reuse the item id\n        Item updated_item = new Item(title_str, maker_str, description_str, image, id);\n        ItemController updated_item_controller = new ItemController(updated_item);\n        updated_item_controller.setDimensions(length_str, width_str, height_str);\n\n        boolean checked = status.isChecked();\n        if (!checked) {\n            updated_item_controller.setStatus(\"Borrowed\");\n            updated_item_controller.setBorrower(contact);\n        }\n\n        // Edit item\n        boolean success = item_list_controller.editItem(item, updated_item, context);\n        if (!success) {\n            return;\n        }\n\n        // End EditItemActivity\n        item_list_controller.removeObserver(this);\n\n        Intent intent = new Intent(this, MainActivity.class);\n        startActivity(intent);\n    "
+  },
+  {
+    "class": "AddContactActivity",
+    "save_method": "saveContact",
+    "validation_returns_false": 3,
+    "original_save_lines": 28,
+    "refactored_save_lines": 14,
+    "retained_save_suffix": "        Contact contact = new Contact(username_str, email_str, null);\n\n        // Add contact\n        boolean success = contact_list_controller.addContact(contact, context);\n        if (!success) {\n            return;\n        }\n\n        // End AddContactActivity\n        finish();\n    "
+  },
+  {
+    "class": "EditContactActivity",
+    "save_method": "saveContact",
+    "validation_returns_false": 3,
+    "original_save_lines": 34,
+    "refactored_save_lines": 16,
+    "retained_save_suffix": "        // Reuse the contact id\n        String id_str = contact_controller.getId();\n        Contact updated_contact = new Contact(username_str, email_str, id_str);\n\n        // Edit Contact: replace contact with updated contact\n        boolean success = contact_list_controller.editContact(contact, updated_contact, context);\n        if (!success) {\n            return;\n        }\n\n        // End EditContactActivity\n        finish();\n    "
+  }
+]
