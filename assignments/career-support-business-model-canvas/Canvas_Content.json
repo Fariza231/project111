@@ -1,0 +1,67 @@
+{
+  "project_title": "Affordable Career Support for University Students",
+  "challenge_statement": "How can we help university students access affordable, personalized career guidance so they can identify suitable career paths and find their first jobs?",
+  "building_blocks": {
+    "Key Partnerships": [
+      "University career centers: student referrals and cohort access agreements.",
+      "Student societies: outreach and trusted introductions.",
+      "Qualified career coaches and content experts: specialist guidance.",
+      "Graduate employers: hiring expectations and current opportunities.",
+      "Hosting, video-call and payment providers: service infrastructure."
+    ],
+    "Key Activities": [
+      "Create and update practical career guidance content.",
+      "Assess student goals and identify suitable career directions.",
+      "Deliver tailored CV reviews and interview practice.",
+      "Maintain the platform and support users.",
+      "Acquire university partners and reach students."
+    ],
+    "Key Resources": [
+      "Accessible online platform, student profiles and learning tools.",
+      "Qualified career advisers and coaches.",
+      "Career assessments, CV templates and reusable learning materials.",
+      "Reliable graduate job-market information.",
+      "University and employer relationships."
+    ],
+    "Value Propositions": [
+      "For students: affordable, personalized help to move from university into a suitable first full-time job.",
+      "Career exploration, tailored CV feedback and interview preparation in one place.",
+      "Clear action plans and practical next steps that build job-search confidence.",
+      "Flexible online access around study commitments.",
+      "For universities: extend career-support capacity with reusable learning and targeted adviser support."
+    ],
+    "Customer Relationships": [
+      "Personalized onboarding and individual action plans.",
+      "Progress check-ins and useful reminders.",
+      "Trusted adviser support through messaging and video consultations.",
+      "Clear service allowances and timely responses.",
+      "Dedicated contact for university cohort accounts."
+    ],
+    "Channels": [
+      "Awareness: university career centers, student societies and targeted social media.",
+      "Sign-up: website explaining service plans and university access.",
+      "Delivery: online platform, video calls and messaging.",
+      "Retention: email and in-platform progress updates."
+    ],
+    "Customer Segments": [
+      "PRIMARY USERS / BUYERS",
+      "Final-year university students actively seeking their first full-time job.",
+      "Students with limited access to personalized career guidance and a need for affordable support.",
+      "SECONDARY BUYERS",
+      "Universities purchasing access packages for graduating student cohorts.",
+      "Initial focus: students reached through partner university career centers."
+    ],
+    "Cost Structure": [
+      "Fixed costs: platform development and maintenance; content creation; partnership management and administration.",
+      "Variable costs: adviser time for CV feedback and coaching; payment processing; hosting and support as usage grows.",
+      "Acquisition costs: student outreach and targeted marketing campaigns.",
+      "Cost controls: reuse self-paced resources, define included feedback allowances and charge separately for intensive coaching."
+    ],
+    "Revenue Streams": [
+      "Affordable student subscriptions for career assessments, learning resources, CV feedback and interview preparation.",
+      "Optional fees for individual coaching and additional personalized support.",
+      "University-funded access packages for final-year cohorts, reducing direct student payments.",
+      "Pricing logic: tiered support allowances align adviser workload with recurring revenue; test prices and renewal demand in a pilot."
+    ]
+  }
+}
