@@ -1,0 +1,19 @@
+Project Title: Affordable Career Support for University Students
+
+Сценарий Presentation_Script.txt содержит примерно 1 147 слов. При темпе 130–145 слов в минуту и коротких паузах презентация займёт примерно 8–9,5 минуты. Заголовки разделов и инструкции в квадратных скобках вслух читать не нужно.
+
+Как записать:
+1. Скачай Career_Support_Business_Model_Canvas.pdf и открой его на экране. Сценарий можно открыть на втором устройстве или распечатать.
+2. Например, создай свою встречу в настольном Zoom, включи микрофон, начни демонстрацию окна с Canvas и выбери запись на компьютер. Также можно использовать функцию записи презентации PowerPoint, вставив PNG Canvas на слайд.
+3. Представь идею своим голосом. Следуй разделам сценария и показывай курсором соответствующие блоки. Во вступлении и заключении показывай весь Canvas.
+4. Сохрани запись в MP4. Проверь, что голос слышен, Canvas читается, а длительность составляет 7–10 минут.
+5. Загрузи видео в YouTube Studio. Выбери доступ «По ссылке», дождись окончания обработки и скопируй ссылку через кнопку «Поделиться».
+6. Проверь ссылку в окне без входа в аккаунт и вставь её в поле URL на Coursera.
+
+Файл Speaking Notes — вспомогательный сценарий, а не видео для сдачи. Ссылка на GitHub тоже не заменяет ссылку на опубликованное видео.
+
+Рекомендуемый заголовок видео:
+Affordable Career Support for University Students — Business Model Canvas Presentation
+
+Описание видео:
+A presentation of a proposed business model for affordable, personalized career guidance for final-year university students, covering all nine Business Model Canvas building blocks and the assumptions to validate in a pilot.

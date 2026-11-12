@@ -1,0 +1,103 @@
+PROJECT TITLE: Affordable Career Support for University Students
+
+PRESENTATION SCRIPT
+Read the spoken sections at a relaxed pace. Do not read the section headings or recording directions aloud. Aim for about 8-9 minutes, allowing short pauses while pointing to the relevant canvas blocks.
+
+OPENING AND CHALLENGE
+[Show the full canvas, then point to the title.]
+
+Hello. In this presentation, I will explain my business model canvas for Affordable Career Support for University Students. The idea focuses on helping final-year students make the transition from university into their first full-time jobs.
+
+The challenge guiding this model is: How can we help university students access affordable, personalized career guidance so they can identify suitable career paths and find their first jobs?
+
+My starting assumption is that some students need more individual guidance than their existing services can provide. They may be unsure which roles suit them or how to present their skills to employers. This is a proposed business model, so I would test these assumptions with students and university career centers before expanding the service.
+
+CUSTOMER SEGMENTS
+[Point to Customer Segments on the right.]
+
+The primary customer segment is final-year university students who are actively looking for their first full-time job. Within that group, I would focus on students who have limited access to personalized advice and need support they can afford.
+
+I selected this segment because graduation creates an immediate reason to prepare applications and interviews. Their needs are specific enough to guide the service: choosing suitable roles, improving a CV, and preparing to explain their experience.
+
+Universities are a secondary paying customer segment. A university could purchase access for a graduating cohort, allowing students to use the service without paying the full cost themselves. The students remain the main users, while universities would also need clear information about participation and service quality.
+
+VALUE PROPOSITIONS
+[Move to Value Propositions in the center.]
+
+The main value proposition is affordable, personalized career support in one accessible online service. Instead of leaving students to connect separate resources themselves, the platform would combine career exploration, tailored CV feedback, and interview preparation.
+
+Personalization would come from understanding each student's interests, skills, and target roles. For example, a student interested in an entry-level software role could receive feedback on how to describe a university project and then practice answering relevant interview questions.
+
+The intended outcome is a clear action plan and greater confidence in the job search. Flexible online access would help students fit preparation around their studies. For universities, the value is additional support capacity: reusable resources could serve many students, with adviser time directed toward individual needs.
+
+CHANNELS
+[Point to Channels.]
+
+Our awareness channels would include university career centers, student societies, and targeted social media campaigns. These channels would help us reach students when career preparation becomes relevant to them.
+
+The website would explain the available plans, the support included, and how university-funded access works. Students would then receive the service through the online platform, video consultations, and messaging.
+
+Email and in-platform progress updates would help students return and continue their preparation. These channels cover the whole customer journey, from discovering the service to signing up, using it, and staying engaged.
+
+CUSTOMER RELATIONSHIPS
+[Point to Customer Relationships above Channels.]
+
+The relationship should feel supportive, practical, and trustworthy. Personalized onboarding would help each student identify a goal and create an individual action plan. Progress check-ins would help them turn advice into completed steps.
+
+Messaging and video consultations would provide human support when students need feedback or clarification. Clear response expectations and defined service allowances would also help students understand what they are buying.
+
+For university customers, a dedicated contact would coordinate cohort access and answer service questions. The aim is to build continuing relationships based on useful guidance and reliable delivery.
+
+REVENUE STREAMS
+[Point to Revenue Streams at the bottom right.]
+
+There are three planned revenue streams. First, students could pay an affordable subscription for career assessments, learning materials, CV feedback, and interview preparation. Different support levels would have clearly defined allowances.
+
+Second, students could purchase individual coaching sessions or additional personalized support when they need more intensive help. Third, universities could buy access packages for final-year cohorts.
+
+This combination connects affordability with the cost of human support. Reusable content can serve many users, while adviser-intensive services need prices that cover the time involved. I have not assumed a proven price or demand level. A pilot would test what students and universities are willing to pay and which plans they find useful.
+
+KEY RESOURCES
+[Point to Key Resources.]
+
+The key resources are the online platform, qualified advisers, career guidance content, and reliable information about graduate opportunities. Student profiles and learning tools would help organize goals and progress.
+
+CV templates and reusable materials would provide a consistent foundation, while advisers would add personalized feedback. Current job-market information would keep the guidance relevant to employer expectations.
+
+University and employer relationships are also valuable resources because they support access to students and practical insight. Together, these resources make the service both accessible and useful.
+
+KEY ACTIVITIES
+[Point to Key Activities above Key Resources.]
+
+Our main activities would include creating and updating guidance content, assessing student needs, reviewing CVs, and delivering interview practice. We would also maintain the platform and respond to support questions.
+
+Another important activity would be reaching students and developing university relationships. A useful service still needs a clear way to connect with its customers.
+
+I would monitor engagement and collect feedback to understand where students get stuck. That information would help improve the materials and focus adviser time on the parts of the experience where individual support adds the most value.
+
+KEY PARTNERSHIPS
+[Point to Key Partnerships on the left.]
+
+University career centers and student societies would help introduce the service to students. Career coaches and content experts would contribute specialist guidance and help maintain quality.
+
+Graduate employers could share information about hiring expectations and opportunities. This would help the service stay connected to the kinds of roles students are actually pursuing.
+
+Hosting, video-call, and payment providers would supply the infrastructure needed to deliver the service. These are proposed partnerships, rather than existing agreements. I would initially focus on a small number of suitable partners so that the service can be tested and improved before it expands.
+
+COST STRUCTURE
+[Point to Cost Structure at the bottom left.]
+
+The main fixed costs would include developing and maintaining the platform, creating guidance materials, and managing partnerships and administration. Marketing and student outreach would also require investment.
+
+Variable costs would include adviser time for CV reviews and coaching, payment processing fees, and hosting or support costs that increase with usage.
+
+The largest capacity concern is personalized adviser time. To manage that cost, the model combines reusable self-paced resources with defined feedback allowances and separately priced intensive coaching. This is how the cost structure supports the affordability promise. Before growing, I would check whether each plan covers its delivery costs and whether the expected volume is realistic for the available advisers.
+
+VIABILITY AND CLOSING
+[Return to the full canvas.]
+
+The nine blocks work together around one focus: helping final-year students prepare for their first jobs. University channels provide a route to those students, the platform delivers reusable resources, and advisers provide targeted personal support.
+
+I would begin with a small university-linked pilot. The main questions would be whether students use the service, whether the guidance is helpful, how much adviser time each plan requires, and whether students or universities want to continue paying for access.
+
+The model offers a practical starting point, but its viability depends on validating those assumptions. The goal is to build a service that students value, universities can support, and the business can deliver sustainably. Thank you for listening.
