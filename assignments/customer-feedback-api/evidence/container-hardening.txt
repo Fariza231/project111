@@ -1,0 +1,2 @@
+"node" true ["ALL"] ["no-new-privileges"]
+uid=1000(node) gid=1000(node) groups=1000(node),1000(node)

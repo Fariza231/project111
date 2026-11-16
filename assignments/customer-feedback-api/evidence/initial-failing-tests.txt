@@ -1,0 +1,155 @@
+
+> customer-feedback-api@1.0.0 test
+> node --test
+
+✔ valid feedback is accepted (0.909673ms)
+✖ whitespace-only name is rejected (7.490546ms)
+✖ email must contain a domain and suffix (0.747985ms)
+✖ rating strings are not coerced to numbers (0.412779ms)
+✖ fractional ratings are rejected (0.63655ms)
+✖ whitespace-only comment is rejected (0.432879ms)
+✖ strings are normalized (2.12551ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 1
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 102.874304
+
+✖ failing tests:
+
+test at tests/validation.test.js:7:1
+✖ whitespace-only name is rejected (7.490546ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(validateFeedback({ ...valid, name: '   ' }).errors.length)
+  
+      at TestContext.<anonymous> (file:///workspace/project111/assignments/customer-feedback-api/tests/validation.test.js:7:55)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/validation.test.js:8:1
+✖ email must contain a domain and suffix (0.747985ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(validateFeedback({ ...valid, email: 'a@' }).errors.length)
+  
+      at TestContext.<anonymous> (file:///workspace/project111/assignments/customer-feedback-api/tests/validation.test.js:8:61)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/validation.test.js:9:1
+✖ rating strings are not coerced to numbers (0.412779ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(validateFeedback({ ...valid, rating: '5' }).errors.length)
+  
+      at TestContext.<anonymous> (file:///workspace/project111/assignments/customer-feedback-api/tests/validation.test.js:9:64)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/validation.test.js:10:1
+✖ fractional ratings are rejected (0.63655ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(validateFeedback({ ...valid, rating: 1.5 }).errors.length)
+  
+      at TestContext.<anonymous> (file:///workspace/project111/assignments/customer-feedback-api/tests/validation.test.js:10:54)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/validation.test.js:11:1
+✖ whitespace-only comment is rejected (0.432879ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(validateFeedback({ ...valid, comment: '\t\n' }).errors.length)
+  
+      at TestContext.<anonymous> (file:///workspace/project111/assignments/customer-feedback-api/tests/validation.test.js:11:58)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/validation.test.js:12:1
+✖ strings are normalized (2.12551ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+  +   comment: ' Great ',
+  -   comment: 'Great',
+      email: 'anita@example.com',
+  +   name: ' Anita ',
+  -   name: 'Anita',
+      rating: 5
+    }
+  
+      at TestContext.<anonymous> (file:///workspace/project111/assignments/customer-feedback-api/tests/validation.test.js:12:45)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { name: ' Anita ', email: 'anita@example.com', rating: 5, comment: ' Great ' },
+    expected: { name: 'Anita', email: 'anita@example.com', rating: 5, comment: 'Great' },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

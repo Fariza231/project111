@@ -1,0 +1,16 @@
+.git
+.github
+node_modules
+.env*
+.npmrc
+tests
+docs
+evidence
+infra
+tools
+coverage
+*.md
+*.pdf
+*.png
+*.zip
+*.txt

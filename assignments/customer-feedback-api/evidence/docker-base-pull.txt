@@ -1,0 +1,21 @@
+24-alpine: Pulling from library/node
+881fc932939e: Pulling fs layer
+86781d25d398: Pulling fs layer
+7eb569707982: Pulling fs layer
+7bb632bc9bd7: Pulling fs layer
+7bb632bc9bd7: Waiting
+7eb569707982: Verifying Checksum
+7eb569707982: Download complete
+881fc932939e: Verifying Checksum
+881fc932939e: Download complete
+881fc932939e: Pull complete
+7bb632bc9bd7: Verifying Checksum
+7bb632bc9bd7: Download complete
+86781d25d398: Verifying Checksum
+86781d25d398: Download complete
+86781d25d398: Pull complete
+7eb569707982: Pull complete
+7bb632bc9bd7: Pull complete
+Digest: sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+Status: Downloaded newer image for node:24-alpine
+docker.io/library/node:24-alpine

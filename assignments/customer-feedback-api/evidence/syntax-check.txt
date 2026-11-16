@@ -1,0 +1,4 @@
+
+> customer-feedback-api@1.0.0 check
+> node --check src/app.js && node --check src/feedback.js && node --check src/validation.js && node --check src/server.js
+

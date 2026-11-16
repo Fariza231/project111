@@ -1,0 +1,25 @@
+{
+  "name": "customer-feedback-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Customer Feedback API with AI-assisted validation, tests and deployment artifacts",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage --test-coverage-include='src/**/*.js'",
+    "test:initial": "node --test docs/initial-validation.check.js",
+    "check": "node --check src/app.js && node --check src/feedback.js && node --check src/validation.js && node --check src/server.js"
+  },
+  "dependencies": {
+    "express": "5.3.0",
+    "express-rate-limit": "8.7.4",
+    "helmet": "8.3.0"
+  },
+  "devDependencies": {
+    "supertest": "7.3.2"
+  }
+}

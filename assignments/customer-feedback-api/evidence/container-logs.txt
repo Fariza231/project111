@@ -1,0 +1,16 @@
+{"event":"listening","port":8080}
+{"requestId":"c958c86b-db97-483f-8845-c6569386c498","method":"GET","route":"/health","status":200}
+{"requestId":"41baabdf-abf1-4ea3-9586-ffee75087d72","method":"POST","route":"/feedback","status":201}
+{"requestId":"42094d8d-bb45-49a3-be81-4a1012d278e4","method":"GET","route":"/feedback","status":401}
+{"requestId":"d75fe4b5-3043-48c7-94b6-d479d3a70269","method":"GET","route":"/feedback","status":200}
+{"requestId":"211f407a-e960-441c-814b-63c59a78ebd5","method":"GET","route":"/feedback/:id","status":200}
+{"requestId":"737f13ef-8995-49d0-bcf5-f0454ee50d5f","method":"GET","route":"/feedback/:id","status":404}
+{"requestId":"34048eb6-7314-4c12-be1c-5f93a1f2a890","method":"POST","route":"/feedback","status":400}
+{"requestId":"8243d186-b46d-4bc1-9270-bf7d2b72a9b1","method":"GET","route":"/health","status":200}
+{"requestId":"7a69fc2c-fcba-4f51-aeda-07d4dd067851","method":"GET","route":"/health","status":200}
+{"requestId":"13328639-e860-4bfc-80c3-bd85b03a943b","method":"GET","route":"/health","status":200}
+{"requestId":"504c9cfb-1ab9-48fb-b6cd-45e20831821a","method":"GET","route":"/health","status":200}
+{"requestId":"09ef4295-82d9-43d2-aa6b-6e86815880eb","method":"GET","route":"/health","status":200}
+{"requestId":"49c63eac-07a9-445a-8d0e-e4eac8060c7a","method":"GET","route":"/health","status":200}
+{"requestId":"baf86d80-851f-4e85-ad4c-85ff373e586a","method":"GET","route":"/health","status":200}
+{"event":"shutdown","signal":"SIGTERM"}

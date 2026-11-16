@@ -1,0 +1,97 @@
+
+> customer-feedback-api@1.0.0 test:coverage
+> node --test --experimental-test-coverage --test-coverage-include='src/**/*.js'
+
+✔ empty collection returns 200 and an array (44.861242ms)
+✔ POST returns 201, exact record and Location header (14.902541ms)
+✔ GET collection and GET ID return the created record (63.428845ms)
+✔ unknown numeric ID returns 404 (6.941758ms)
+✔ invalid ID 0 returns 400 (3.399704ms)
+✔ invalid ID -1 returns 400 (3.95257ms)
+✔ invalid ID abc returns 400 (3.955454ms)
+✔ invalid ID 1.5 returns 400 (3.117759ms)
+✔ invalid ID 01 returns 400 (3.123267ms)
+✔ invalid ID 9007199254740992 returns 400 (4.772129ms)
+✔ malformed JSON returns a sanitized 400 (4.536281ms)
+✔ missing body returns 400 (4.239012ms)
+✔ unsupported body encoding cannot bypass validation (3.883699ms)
+✔ array body rejected over HTTP (3.477039ms)
+✔ invalid input is not persisted and does not consume an ID (9.882868ms)
+✔ normalization is visible in HTTP response (3.316863ms)
+✔ 20 concurrent creates have unique sequential IDs (48.779661ms)
+✔ app instances isolate storage (5.882407ms)
+✔ storage returns defensive copies (0.217531ms)
+✔ storage is deliberately ephemeral (0.131704ms)
+✔ bounded storage rejects additional creates (0.521009ms)
+✔ capacity exhaustion becomes 503 without stack leakage (5.835537ms)
+✔ oversized JSON body returns 413 (3.932911ms)
+✔ request IDs and security headers are supplied (3.510508ms)
+✔ unrecognized route returns JSON 404 (2.923452ms)
+✔ server faults are sanitized in responses and logs (3.078351ms)
+✔ production startup fails closed without a sufficiently long read key (0.24403ms)
+✔ configured read key protects collection, ID and HEAD without blocking POST (17.066463ms)
+✔ rate limiting returns 429 and ignores spoofed forwarding headers (7.441035ms)
+✔ strict ID parser rejects unsafe and ambiguous values (0.186645ms)
+✔ valid feedback is accepted (1.510618ms)
+✔ whitespace-only name is rejected (0.706452ms)
+✔ email must contain a domain and suffix (0.268756ms)
+✔ rating strings are not coerced to numbers (0.110934ms)
+✔ fractional ratings are rejected (0.262908ms)
+✔ whitespace-only comment is rejected (0.096983ms)
+✔ strings are normalized (0.913017ms)
+✔ missing name is rejected (0.155239ms)
+✔ missing email is rejected (0.170171ms)
+✔ missing rating is rejected (0.082411ms)
+✔ missing comment is rejected (0.072487ms)
+✔ nonobject body null is rejected (0.313843ms)
+✔ nonobject body undefined is rejected (0.077244ms)
+✔ nonobject body [] is rejected (0.034821ms)
+✔ nonobject body "text" is rejected (0.028392ms)
+✔ nonobject body 123 is rejected (0.025537ms)
+✔ nonobject body true is rejected (0.023735ms)
+✔ invalid rating 0 is rejected (0.172774ms)
+✔ invalid rating -1 is rejected (0.042663ms)
+✔ invalid rating 6 is rejected (0.030765ms)
+✔ invalid rating 1.2 is rejected (0.02727ms)
+✔ invalid rating NaN is rejected (0.026949ms)
+✔ invalid rating Infinity is rejected (0.025698ms)
+✔ invalid rating null is rejected (0.026299ms)
+✔ invalid rating true is rejected (0.04023ms)
+✔ invalid rating 1 is rejected (0.02722ms)
+✔ rating boundary 1 is valid (0.089612ms)
+✔ rating boundary 5 is valid (0.060409ms)
+✔ invalid name type or length rejected: number (0.082652ms)
+✔ invalid comment type or length rejected: object (0.034701ms)
+✔ invalid email type or length rejected: object (0.027911ms)
+✔ invalid name type or length rejected: string (0.032337ms)
+✔ invalid comment type or length rejected: string (0.228096ms)
+✔ invalid email type or length rejected: string (0.042573ms)
+✔ maximum name/comment boundaries accepted (0.093057ms)
+✔ unknown and prototype-related keys are rejected (0.153847ms)
+✔ unicode name and comment are supported (0.296338ms)
+✔ validation never modifies input (0.095591ms)
+ℹ tests 68
+ℹ suites 0
+ℹ pass 68
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 580.891492
+ℹ start of coverage report
+ℹ ---------------------------------------------------------------
+ℹ file           | line % | branch % | funcs % | uncovered lines
+ℹ ---------------------------------------------------------------
+ℹ src            |        |          |         | 
+ℹ  app.js        | 100.00 |    97.14 |  100.00 | 
+ℹ  feedback.js   | 100.00 |   100.00 |  100.00 | 
+ℹ  validation.js | 100.00 |   100.00 |  100.00 | 
+ℹ ---------------------------------------------------------------
+ℹ all files      | 100.00 |    98.78 |  100.00 | 
+ℹ ---------------------------------------------------------------
+ℹ end of coverage report
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice

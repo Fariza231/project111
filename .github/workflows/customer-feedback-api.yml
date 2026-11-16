@@ -1,0 +1,74 @@
+name: Customer Feedback API CI
+on:
+  push:
+    paths:
+      - 'assignments/customer-feedback-api/src/**'
+      - 'assignments/customer-feedback-api/tests/**'
+      - 'assignments/customer-feedback-api/infra/**'
+      - 'assignments/customer-feedback-api/tools/container-smoke.mjs'
+      - 'assignments/customer-feedback-api/package*.json'
+      - 'assignments/customer-feedback-api/Dockerfile'
+      - 'assignments/customer-feedback-api/.dockerignore'
+      - '.github/workflows/customer-feedback-api.yml'
+  pull_request:
+    paths:
+      - 'assignments/customer-feedback-api/**'
+      - '.github/workflows/customer-feedback-api.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: feedback-api-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        shell: bash
+        working-directory: assignments/customer-feedback-api
+    steps:
+      - name: Checkout
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: assignments/customer-feedback-api/package-lock.json
+      - name: Install locked dependencies without lifecycle scripts
+        run: npm ci --ignore-scripts
+      - name: Syntax and automated test coverage
+        run: |
+          npm run check
+          npm run test:coverage
+      - name: Production dependency audit
+        run: npm audit --omit=dev --audit-level=high
+      - name: Build Docker image
+        run: docker build -t customer-feedback-api:ci .
+      - name: Run hardened container smoke test
+        env:
+          READ_API_KEY: ci-test-fixture-not-a-production-key
+        run: |
+          docker run -d --name feedback-ci --init --read-only \
+            --tmpfs /tmp:rw,noexec,nosuid,size=16m --cap-drop ALL \
+            --security-opt no-new-privileges --memory 256m --cpus 0.5 \
+            --pids-limit 64 -p 127.0.0.1:18080:8080 \
+            -e READ_API_KEY customer-feedback-api:ci
+          trap 'docker logs feedback-ci; docker rm -f feedback-ci' EXIT
+          API_URL=http://127.0.0.1:18080 node tools/container-smoke.mjs
+          test "$(docker exec feedback-ci id -u)" = '1000'
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@b9cd54a3c349d3f38e8881555d616ced269862dd # v3
+        with:
+          terraform_version: '1.13.5'
+          terraform_wrapper: false
+      - name: Validate infrastructure without creating cloud resources
+        run: |
+          terraform -chdir=infra fmt -check -recursive
+          terraform -chdir=infra init -backend=false -input=false
+          terraform -chdir=infra validate
+          terraform -chdir=infra test
