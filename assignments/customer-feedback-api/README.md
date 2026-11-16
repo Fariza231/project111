@@ -70,3 +70,9 @@ Terraform1.7+ is required; verification used1.13.5. The AWS provider is locked i
 `npm run test:initial` intentionally runs selected tests against the archived defective draft and exits nonzero; it is not part of `npm test`. The final normal suite imports only production code.
 
 **Readiness: local/demo verified; production customer-data deployment is NOT approved.** Storage is process-local and resets on restart; the single read key is not tenant-level authorization; distributed throttling, durable storage, privacy/retention and operational review remain necessary. See the security review for the complete distinction between implemented controls and open findings. No human review or successful Copilot usage is fabricated.
+
+## Submission artifacts
+
+Upload `Customer_Feedback_API_Final_Report.pdf` to the assignment (PDF is accepted). The optional `Customer_Feedback_API_Project.zip` contains the source project for inspection and local execution; ZIP is not an accepted submission format for this prompt.
+
+Verified public CI run: https://github.com/Fariza231/project111/actions/runs/43876618275 (successful for source commit f362b0f). See evidence/github-actions-status.json.
